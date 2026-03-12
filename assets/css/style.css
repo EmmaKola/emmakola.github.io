@@ -459,5 +459,9 @@ footer p {
 }
 
 .education-item p {
-    margin: 3px 0;
+    margin: 0;
+}
+
+.education-item p + p {
+    margin-top: 2px;
 }
