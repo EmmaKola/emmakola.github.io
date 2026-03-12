@@ -458,10 +458,3 @@ footer p {
     }
 }
 
-.education-item p {
-    margin: 0;
-}
-
-.education-item p + p {
-    margin-top: 2px;
-}
