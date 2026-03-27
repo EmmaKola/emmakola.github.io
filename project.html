@@ -27,48 +27,79 @@
 </head>
 <body>
 
-<!-- HEADER SECTION -->
-<header>
+    <!-- BACK BUTTON -->
     <div class="container">
-        <!--💡UPDATE: Change to your name and title-->
-        <h1>Kolawole Emmanuel</h1>
-        <p>Data Analyst | Power BI Developer | Data Story Teller</p>
-        <div class="social-links">
-            <!--💡UPDATE: Add your social media links and CV file-->
-            <a href="https://www.linkedin.com/in/emmanuelokolawole" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/EmmaKola" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="assets/Mycv.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Pharmaceutical Sales Analysis</h1>
+        <p>Data-driven insights into revenue and profit trends.</p>
+    </section>
+
+    <!-- TABS -->
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('overview')">Overview</button>
+        <button class="tab-btn" onclick="openTab('insights')">Insights</button>
+        <button class="tab-btn" onclick="openTab('recommendations')">Recommendations</button>
+    </div>
+
+    <!-- OVERVIEW -->
+    <section id="overview" class="tab-content active">
+        <h2>Executive Summary</h2>
+        <p>This report analyses pharmaceutical sales performance.</p>
+    </section>
+
+    <!-- INSIGHTS -->
+    <section id="insights" class="tab-content">
+        <h2>Key Insights</h2>
+
+        <div class="accordion">
+            <button class="accordion-btn">Revenue Trend</button>
+            <div class="accordion-content">
+                <p>Revenue shows cyclical growth across months.</p>
+            </div>
         </div>
-    </div>
-</header>
 
-<!-- NAVIGATION -->
-<nav>
-    <div class="container">
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section id="recommendations" class="tab-content">
+        <h2>Recommendations</h2>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>Focus on high-performing segments</li>
+            <li>Improve seasonal inventory planning</li>
         </ul>
-    </div>
-</nav>
+    </section>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="section">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <!--💡UPDATE: Change the image to your own profile photo in assets/images/-->
-            <img src="assets/images/profile-pic.jpg" alt="Kolawole Emmanuel" class="profile-photo">
-            <div class="about-text">
-                <!--💡UPDATE: Write your own 'About Me' text here-->
-                <p> I am Data Analyst and enjoy turning raw, complex, messy datasets into clear stories and actionable insights. My focus are on building dashboards that are interactive, automating repetitive tasks to free up teams and time for more interesting problems, and creating models that help businesses plan for the future.</p>
-                <p> I am profiecient in using SQL, Python, Power BI, Tableau, Excel with a proven ability to develop interactive dashboards, automate reporting workflows, optimize query performance, build data models, data storytelling, business intelligence and enhance data integrity for strategic decision-making.
-                    I am proficient in developing comprehensive reports that reveal hidden patterns and trends in data. This portfolio showcases my projects across various sectors.</p>
-                <!-- EDUCATION SUBSECTION -->
-                
-                <div id="education">
-                    <h3>Education</h3>
+  <script>
 
+// TAB FUNCTION
+function openTab(tabId) {
+    let tabs = document.querySelectorAll('.tab-content');
+    let buttons = document.querySelectorAll('.tab-btn');
 
+    tabs.forEach(tab => tab.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+}
+
+// ACCORDION FUNCTION
+let accordions = document.querySelectorAll(".accordion-btn");
+
+accordions.forEach(btn => {
+    btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        let content = this.nextElementSibling;
+        content.style.display =
+            content.style.display === "block" ? "none" : "block";
+    });
+});
+
+</script>
+
+</body>
