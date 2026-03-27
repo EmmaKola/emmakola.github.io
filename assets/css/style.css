@@ -511,16 +511,24 @@ footer p {
 
 /* HERO */
 .hero {
-    background: var(--primary-color);
+   background: var(--primary-color);
     color: white;
     padding: 60px 40px;
+
+    /* Center content */
+    text-align: center;         /* Centers text horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* TABS */
 .tabs {
-    display: flex;
+     display: flex;
     gap: 10px;
-    padding: 20px 40px;
+    padding: 20px 0;  /* reduced side padding for cleaner centering */
+    justify-content: center;  /* center the tabs horizontally */
     background: white;
 }
 
@@ -538,8 +546,10 @@ footer p {
 
 /* CONTENT */
 .tab-content {
-    display: none;
-    padding: 30px 40px;
+  display: none;
+    padding: 30px 20px;
+    max-width: 900px;       /* keeps content readable */
+    margin: 0 auto;         /* centers horizontally */
 }
 
 .tab-content.active {
