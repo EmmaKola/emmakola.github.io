@@ -462,7 +462,7 @@ footer p {
 }
 
 #education h3 {
-     font-family: inherit; /* or your chosen font */
+     font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 600;
     color: #1A2A4C;
