@@ -28,15 +28,21 @@
 <body>
 
     <!-- BACK BUTTON -->
-    <div class="container">
-        <a href="index.html" class="back-btn">← Back to Portfolio</a>
-    </div>
+    <a href="index.html" class="back-btn">
+    <i class="fas fa-arrow-left"></i>
+	</a>
 
-    <!-- HERO -->
-    <section class="hero">
+	<section class="hero">
+    <div class="hero-content">
         <h1>Nova Med Solutions</h1>
-        <p>Data-driven insights into revenue and profit trends.</p>
-    </section>
+        <p>Transforming pharmaceutical data into actionable intelligence</p>
+
+        <div class="hero-buttons">
+            <button onclick="openTab('overview')">View Overview</button>
+            <button onclick="openTab('insights')" class="secondary">View Insights</button>
+        </div>
+    </div>
+	</section>
 
     <!-- TABS -->
     <div class="tabs">
@@ -47,70 +53,59 @@
 
     <!-- OVERVIEW -->
     <section id="overview" class="tab-content active">
-      <h2>Project Overview</h2> 
-      <p> This project took a deep dive into Nova Med solutions a dynamic and a leading pharmaceutical company that has expanded across Europe and other part of the 	continents. 
-        NovaMed Solutions aims to optimise sales performance and inventory management across its diverse healthcare 	network. 
-        The company faces challenges in demand forecasting, stock control, and customer engagement, impacting operational efficiency. 
-        <p>Over the past 	year, comprehensive sales data—including revenue, profit margins, drug performance, and customer demographics—has been collected. 
-        This dataset 	provides a unique opportunity for in-depth analysis and trend identification. Leveraging data-driven insights, NovaMed seeks to enhance business 
-        strategies, identify key market opportunities, and streamline operations. The project focuses on translating complex sales data into actionable decisions. 	
-        Ultimately, the goal is to improve efficiency, profitability, and customer satisfaction across the organisation.</p>
-	</p>
-		<p> </p>
-		<h2>About the Business</h2>
-		<p>NovaMed Solutions is a leading pharmaceutical distributor with a strong presence across Europe and other regions worldwide. 
-			Renowned for its expertise 	and commitment to high-quality standards, the company ensures the availability of essential medications to diverse healthcare providers.
-			Their supply chain includes hospitals, distributors at smaller scale, and direct users.</p> 
-			<p>By combining innovation with data-driven decision-making,
-			the company helps customers optimise operations, improve patient access, and make informed strategic choices. With a focus on excellence and reliability, 
-			NovaMed empowers healthcare companies to address critical health challenges and achieve measurable impact. NovaMed continues to support healthcare 	
-			providers with timely access to high-quality pharmaceutical solutions.</p>
-    		<p></p>
-		
-		<h2>Business Problem Statement</h2>
-		<p> NovaMed Solutions is currently underutilising its extensive sales and customer data, limiting its ability to gain full visibility into business performance, 	
-			optimize inventory, and effectively identify key market and customer opportunities across its global operations.</p>
-		<p>The problem has been identified and summarised into bullet points for clarity purpose.</p>
-		<ul>
-		  <li><strong>Limited Sales Performance Visibility</strong></li>
-			<p>Inadequate tracking of core metrics such as revenue, profit, and cost of goods sold, with limited month-over-month performance insights.</p>
-		  <li><strong>Poor Product Performance Identification</strong></li>
-			<p>Difficulty in consistently identifying top-performing and underperforming drugs, restricting strategic product decisions.</p>
-		  <li><strong>Insufficient Customer Insights</strong></li>
-			<p>Limited understanding of customer demographics, purchasing behaviour, and buyer segmentation, reducing the effectiveness of engagement strategies.</p>
-			<li><strong>Lack of Geographical and Market Insights</strong></li>
-			<p>Minimal visibility into regional sales performance, hindering the identification of high-value markets and growth opportunities.</p>
-		</ul>
 
-		<h2>Objectives of the Project</h2>
-		<ul>
-		  <li>Identify which customer segments are currently driving the most revenue</li>
-		  <li>How do profit margins vary across different medications and regions</li>
-		  <li>What historical sales patterns can be used to predict future revenue targets</li>
-			<li>What are the key demographics of our most loyal customers.</li>
-			<li>Provide an interactive sales and customer dashboard that can be drilled down using slicers to get insight and make data-driven decision.</li>
-			<li>Prepare a report to present to the skakeholders with recomendation  from the data insight</li>
-		</ul>
+    <div class="card">
+        <h2>Project Overview</h2>
+        <p>This project took a deep dive into Nova Med Solutions, a dynamic and leading pharmaceutical company operating across Europe and globally.</p>
+        <p>The goal is to optimise sales performance, improve inventory management, and uncover key business insights using data.</p>
+    </div>
 
-		<h2>Data Analysis Process</h2>
-		<ol>
-			<li><strong>Data Collection </strong>
-			<p>Data was collected from the HR department via excel file, ensured that it was enough, data was handled with company policies</p></li>
-		  <li><strong>Data Cleaning</strong>
-		  <p>After data was extracted, it was cleaned using power query(Duplicate data and incosistent data were removed, empty cells and outliers
-			  were also removed, data set was inspected to contain all the needed data) during ETL process.</p></li>
-		  <li><strong>ETL Process</strong>
-		  <p>After data was cleaned, it was transformed, and loaded into power BI.</p></li>
-			<li><strong>Define Data Model</strong>
-			<p>Data model was defined, and the relationship between fact table and other tables was defined.</p></li>
-			<li><strong>Calculations</strong>
-			<p>Calendar dimension table was created, calculated column and measures were created</p></li>
-			<li><strong>Dashboard Creation</strong>
-			<p>Chats were created to show relationship and trends,to track customer demogrpahics, and hight performance products, key KPI were also created to track growth. Interactive dashboard was created</p></li>
-		</ol>
-		<h2>Executive Summary</h2>
-        <p>This report analyses pharmaceutical sales performance.</p>
-    </section>
+    <div class="card">
+        <h2>About the Business</h2>
+        <p>NovaMed Solutions is a pharmaceutical distributor with strong global presence, known for high standards and reliable supply to healthcare providers.</p>
+        <p>The company supports hospitals, distributors, and direct users with data-driven decision-making and operational efficiency.</p>
+    </div>
+
+    <div class="card">
+        <h2>Business Problems</h2>
+        <ul class="styled-list">
+            <li><i class="fas fa-chart-line"></i> Limited Sales Performance Visibility</li>
+            <li><i class="fas fa-pills"></i> Poor Product Performance Tracking</li>
+            <li><i class="fas fa-users"></i> Insufficient Customer Insights</li>
+            <li><i class="fas fa-globe"></i> Lack of Regional Market Visibility</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Project Objectives</h2>
+        <ul>
+            <li>Identify top-performing customer segments</li>
+            <li>Analyse profit margins across products and regions</li>
+            <li>Detect historical sales patterns for forecasting</li>
+            <li>Understand key customer demographics</li>
+            <li>Develop an interactive dashboard for decision-making</li>
+            <li>Provide actionable business recommendations</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Data Analysis Process</h2>
+        <ol>
+            <li><strong>Data Collection:</strong> Data sourced and validated from internal systems</li>
+            <li><strong>Data Cleaning:</strong> Removed duplicates, inconsistencies, and outliers</li>
+            <li><strong>ETL Process:</strong> Transformed and loaded data into Power BI</li>
+            <li><strong>Data Modelling:</strong> Built relationships between tables</li>
+            <li><strong>Calculations:</strong> Created measures and KPIs</li>
+            <li><strong>Dashboard Creation:</strong> Built interactive visuals and reports</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>Executive Summary</h2>
+        <p>This project delivers data-driven insights to improve revenue growth, optimise inventory, and enhance customer engagement.</p>
+    </div>
+
+</section>
 
     <!-- INSIGHTS -->
     <section id="insights" class="tab-content">
@@ -149,15 +144,11 @@ function openTab(tabId) {
 }
 
 // ACCORDION FUNCTION
-let accordions = document.querySelectorAll(".accordion-btn");
-
-accordions.forEach(btn => {
-    btn.addEventListener("click", function () {
-        this.classList.toggle("active");
-
-        let content = this.nextElementSibling;
-        content.style.display =
-            content.style.display === "block" ? "none" : "block";
+document.querySelectorAll(".accordion-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        let content = btn.nextElementSibling;
+        content.classList.toggle("show");
     });
 });
 
