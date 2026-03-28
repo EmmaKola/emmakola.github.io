@@ -473,7 +473,7 @@ footer p {
     margin-bottom: 1.2rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
-    border-left: 5px solid #1A2A4C; /* Accent stripe */
+    border-left: 5px solid #29B6F6; /* Accent stripe */
 }
 
 .education-item:hover {
@@ -483,11 +483,11 @@ footer p {
 
 .education-item h4 {
     margin-bottom: 0.5rem;
-    color: #1A2A4C;
+    color: #29B6F6;
 }
 
 .education-item p {
     line-height: 1.6;
-    color: #1A2A4C;
+    color: #29B6F6;
 }
 
