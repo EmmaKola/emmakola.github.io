@@ -652,3 +652,14 @@ footer p {
     margin-top: 1.5rem; /* increase or decrease as needed */
 }
 
+.business-list {
+    margin-left: 1.5rem; /* moves bullets inward */
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
+.business-list li {
+    margin-bottom: 1rem;
+    color: var(--dark-text-color);
+}
+
