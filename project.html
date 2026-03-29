@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Fonts for headings and body -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--💡UPDATE: Change the title to your name-->
-    <title>Nova Med Solutions</title>
 
-   <!--💡UPDATE: Add your favicon here. You can generate one at realfavicongenerator.net  favicon-32x32.png?v=2-->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="apple-touch-icon" href="/favicon.png">
-    
-    
-    <!-- Google Fonts for Elegant Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Your Stylesheet -->
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Nova Med Solutions</title>
 </head>
+
 <body>
 
     <!-- BACK BUTTON -->
     <a href="index.html" class="back-btn">
-    <i class="fas fa-arrow-left"></i>
-	</a>
+        <i class="fas fa-arrow-left"></i>
+    </a>
 
-	<section class="hero">
-    <div class="hero-content">
-        <h1>Nova Med Solutions</h1>
-        <p>Transforming pharmaceutical data into actionable intelligence</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nova Med Solutions</h1>
+            <p>Transforming pharmaceutical data into actionable intelligence</p>
 
-        <div class="hero-buttons">
-            <button onclick="openTab('overview')">View Overview</button>
-            <button onclick="openTab('insights')" class="secondary">View Insights</button>
+            <div class="hero-buttons">
+                <button onclick="openTab('overview')">View Overview</button>
+                <button onclick="openTab('insights')" class="secondary">View Insights</button>
+            </div>
         </div>
-    </div>
-	</section>
+    </section>
 
     <!-- TABS -->
     <div class="tabs">
@@ -51,63 +43,63 @@
         <button class="tab-btn" onclick="openTab('recommendations')">Recommendations</button>
     </div>
 
-    <!-- OVERVIEW -->
+    <!-- OVERVIEW TAB -->
     <section id="overview" class="tab-content active">
 
-    <div class="card">
-        <h2>Project Overview</h2>
-        <p>This project took a deep dive into Nova Med Solutions, a dynamic and leading pharmaceutical company operating across Europe and globally.</p>
-        <p>The goal is to optimise sales performance, improve inventory management, and uncover key business insights using data.</p>
-    </div>
+        <div class="card">
+            <h2>Project Overview</h2>
+            <p>This project took a deep dive into Nova Med Solutions, a dynamic and leading pharmaceutical company operating across Europe and globally.</p>
+            <p>The goal is to optimise sales performance, improve inventory management, and uncover key business insights using data.</p>
+        </div>
 
-    <div class="card">
-        <h2>About the Business</h2>
-        <p>NovaMed Solutions is a pharmaceutical distributor with strong global presence, known for high standards and reliable supply to healthcare providers.</p>
-        <p>The company supports hospitals, distributors, and direct users with data-driven decision-making and operational efficiency.</p>
-    </div>
+        <div class="card">
+            <h2>About the Business</h2>
+            <p>NovaMed Solutions is a pharmaceutical distributor with strong global presence, known for high standards and reliable supply to healthcare providers.</p>
+            <p>The company supports hospitals, distributors, and direct users with data-driven decision-making and operational efficiency.</p>
+        </div>
 
-    <div class="card">
-        <h2>Business Problems</h2>
-        <ul class="styled-list">
-            <li><i class="fas fa-chart-line"></i> Limited Sales Performance Visibility</li>
-            <li><i class="fas fa-pills"></i> Poor Product Performance Tracking</li>
-            <li><i class="fas fa-users"></i> Insufficient Customer Insights</li>
-            <li><i class="fas fa-globe"></i> Lack of Regional Market Visibility</li>
-        </ul>
-    </div>
+        <div class="card">
+            <h2>Business Problems</h2>
+            <ul class="styled-list">
+                <li><i class="fas fa-chart-line"></i> Limited Sales Performance Visibility</li>
+                <li><i class="fas fa-pills"></i> Poor Product Performance Tracking</li>
+                <li><i class="fas fa-users"></i> Insufficient Customer Insights</li>
+                <li><i class="fas fa-globe"></i> Lack of Regional Market Visibility</li>
+            </ul>
+        </div>
 
-    <div class="card">
-        <h2>Project Objectives</h2>
-        <ul>
-            <li>Identify top-performing customer segments</li>
-            <li>Analyse profit margins across products and regions</li>
-            <li>Detect historical sales patterns for forecasting</li>
-            <li>Understand key customer demographics</li>
-            <li>Develop an interactive dashboard for decision-making</li>
-            <li>Provide actionable business recommendations</li>
-        </ul>
-    </div>
+        <div class="card">
+            <h2>Project Objectives</h2>
+            <ul>
+                <li>Identify top-performing customer segments</li>
+                <li>Analyse profit margins across products and regions</li>
+                <li>Detect historical sales patterns for forecasting</li>
+                <li>Understand key customer demographics</li>
+                <li>Develop an interactive dashboard for decision-making</li>
+                <li>Provide actionable business recommendations</li>
+            </ul>
+        </div>
 
-    <div class="card">
-        <h2>Data Analysis Process</h2>
-        <ol>
-            <li><strong>Data Collection:</strong> Data sourced and validated from internal systems</li>
-            <li><strong>Data Cleaning:</strong> Removed duplicates, inconsistencies, and outliers</li>
-            <li><strong>ETL Process:</strong> Transformed and loaded data into Power BI</li>
-            <li><strong>Data Modelling:</strong> Built relationships between tables</li>
-            <li><strong>Calculations:</strong> Created measures and KPIs</li>
-            <li><strong>Dashboard Creation:</strong> Built interactive visuals and reports</li>
-        </ol>
-    </div>
+        <div class="card">
+            <h2>Data Analysis Process</h2>
+            <ol>
+                <li><strong>Data Collection:</strong> Data sourced and validated from internal systems</li>
+                <li><strong>Data Cleaning:</strong> Removed duplicates, inconsistencies, and outliers</li>
+                <li><strong>ETL Process:</strong> Transformed and loaded data into Power BI</li>
+                <li><strong>Data Modelling:</strong> Built relationships between tables</li>
+                <li><strong>Calculations:</strong> Created measures and KPIs</li>
+                <li><strong>Dashboard Creation:</strong> Built interactive visuals and reports</li>
+            </ol>
+        </div>
 
-    <div class="card">
-        <h2>Executive Summary</h2>
-        <p>This project delivers data-driven insights to improve revenue growth, optimise inventory, and enhance customer engagement.</p>
-    </div>
+        <div class="card">
+            <h2>Executive Summary</h2>
+            <p>This project delivers data-driven insights to improve revenue growth, optimise inventory, and enhance customer engagement.</p>
+        </div>
 
-</section>
+    </section>
 
-    <!-- INSIGHTS -->
+    <!-- INSIGHTS TAB -->
     <section id="insights" class="tab-content">
         <h2>Key Insights</h2>
 
@@ -117,10 +109,9 @@
                 <p>Revenue shows cyclical growth across months.</p>
             </div>
         </div>
-
     </section>
 
-    <!-- RECOMMENDATIONS -->
+    <!-- RECOMMENDATIONS TAB -->
     <section id="recommendations" class="tab-content">
         <h2>Recommendations</h2>
         <ul>
@@ -129,29 +120,26 @@
         </ul>
     </section>
 
-  <script>
+    <!-- JAVASCRIPT -->
+    <script>
+        function openTab(tabId) {
+            let tabs = document.querySelectorAll('.tab-content');
+            let buttons = document.querySelectorAll('.tab-btn');
 
-// TAB FUNCTION
-function openTab(tabId) {
-    let tabs = document.querySelectorAll('.tab-content');
-    let buttons = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
 
-    tabs.forEach(tab => tab.classList.remove('active'));
-    buttons.forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
 
-    document.getElementById(tabId).classList.add('active');
-    event.target.classList.add('active');
-}
-
-// ACCORDION FUNCTION
-document.querySelectorAll(".accordion-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
-        let content = btn.nextElementSibling;
-        content.classList.toggle("show");
-    });
-});
-
-</script>
+        document.querySelectorAll(".accordion-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                btn.classList.toggle("active");
+                btn.nextElementSibling.classList.toggle("show");
+            });
+        });
+    </script>
 
 </body>
+</html>
