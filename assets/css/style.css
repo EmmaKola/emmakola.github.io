@@ -533,27 +533,41 @@ footer p {
     opacity: 0.9;
 }
 
-.hero-buttons button {
-    padding: 0.8rem 1.6rem;
-    margin: 1rem 0.5rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-    background: var(--white-color);
-    color: var(--primary-color);
+/* Updated Hero Buttons */
+.hero-buttons {
+    margin-top: 2rem;
 }
 
-.hero-buttons .secondary {
+.hero-btn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    margin: 0.5rem;
+    background: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    background: var(--accent-color);
+    color: var(--white-color);
+}
+
+.hero-btn.secondary {
     background: transparent;
     border: 2px solid var(--white-color);
     color: var(--white-color);
 }
 
-.hero-buttons button:hover {
-    transform: translateY(-3px);
+.hero-btn.secondary:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
 }
+
 
 /* Tabs */
 .tabs {
