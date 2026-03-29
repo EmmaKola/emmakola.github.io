@@ -663,3 +663,25 @@ footer p {
     color: var(--dark-text-color);
 }
 
+.objectives-list {
+    margin-left: 1.5rem; /* indent the list */
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
+.objectives-list li {
+    margin-bottom: 1rem;
+    color: var(--dark-text-color);
+}
+.process-list {
+    margin-left: 1.5rem; /* indent the list */
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
+.process-list li {
+    margin-bottom: 1rem;
+    color: var(--dark-text-color);
+}
+
+
