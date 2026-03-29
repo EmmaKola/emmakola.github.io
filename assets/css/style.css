@@ -648,4 +648,7 @@ footer p {
     display: block;
 }
 
+.spaced {
+    margin-top: 1.5rem; /* increase or decrease as needed */
+}
 
