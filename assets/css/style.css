@@ -619,8 +619,8 @@ footer p {
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    transform: scale(1.02);
+    
 }
 
 .card h2 {
