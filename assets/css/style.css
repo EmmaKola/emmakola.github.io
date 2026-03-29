@@ -494,3 +494,141 @@ footer p {
     color: #444;
 }
 
+/* -----------------------------------------
+   NOVA MED SOLUTIONS PAGE STYLES
+------------------------------------------*/
+
+/* Back Button */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.hero-buttons button {
+    padding: 0.8rem 1.6rem;
+    margin: 1rem 0.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.hero-buttons .secondary {
+    background: transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.hero-buttons button:hover {
+    transform: translateY(-3px);
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 10px;
+}
+
+.tab-btn {
+    padding: 0.8rem 1.4rem;
+    border: none;
+    background: #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 2rem;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Cards for Nova Med Page */
+.card {
+    background: var(--white-color);
+    padding: 2rem;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    max-width: 900px;
+}
+
+.card h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Accordion */
+.accordion-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.accordion-content {
+    display: none;
+    background: var(--white-color);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+
