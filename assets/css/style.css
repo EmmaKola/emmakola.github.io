@@ -555,6 +555,7 @@ footer p {
     transform: translateY(-3px);
     background: var(--accent-color);
     color: var(--white-color);
+    border-color: var(--accent-color);
 }
 
 .hero-btn.secondary {
@@ -564,9 +565,11 @@ footer p {
 }
 
 .hero-btn.secondary:hover {
-    background: var(--white-color);
-    color: var(--primary-color);
+    background: var(--accent-color);
+    color: var(--white-color);
+    border-color: var(--accent-color);
 }
+
 
 
 /* Tabs */
