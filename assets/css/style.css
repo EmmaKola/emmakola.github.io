@@ -629,41 +629,6 @@ footer p {
     margin-bottom: 1rem;
 }
 
-/* -----------------------------------------
-  Insight Section Styles
-------------------------------------------*/
-
-/* Accordion */
-
-.accordion {
-    max-width: 900px;   /* Controls how narrow the whole card becomes */
-    margin: 0 auto 30px auto; /* Centres it */
-
-.accordion-btn {
-    width: 100%;
-    padding: 1rem;
-    background: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 1rem;
-    font-weight: 600;
-}
-
-.accordion-content {
-    display: none;
-    background: var(--white-color);
-    padding: 1rem;
-    margin-top: 0.5rem;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    padding: 35px 40px;   /* Increase these numbers for more breathing room */
-}
-
-.accordion-content.show {
-    display: block;
-}
 
 .spaced {
     margin-top: 1.5rem; /* increase or decrease as needed */
@@ -699,6 +664,42 @@ footer p {
 .process-list li {
     margin-bottom: 1rem;
     color: var(--dark-text-color);
+}
+
+/* -----------------------------------------
+  Insight Section Styles
+------------------------------------------*/
+
+/* Accordion */
+
+.accordion {
+    max-width: 900px;   /* Controls how narrow the whole card becomes */
+    margin: 0 auto 30px auto; /* Centres it */
+
+.accordion-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.accordion-content {
+    display: none;
+    background: var(--white-color);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 35px 40px;   /* Increase these numbers for more breathing room */
+}
+
+.accordion-content.show {
+    display: block;
 }
 
 .chart-container {
