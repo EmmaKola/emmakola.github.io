@@ -691,4 +691,28 @@ footer p {
     color: var(--dark-text-color);
 }
 
+.chart-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.chart-card {
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+    max-width: 420px; /* Controls how slim the card is */
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10); /* Small, soft shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insight-chart {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 
