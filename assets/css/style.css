@@ -630,6 +630,11 @@ footer p {
 }
 
 /* Accordion */
+
+.accordion {
+    max-width: 900px;   /* Controls how narrow the whole card becomes */
+    margin: 0 auto 30px auto; /* Centres it */
+
 .accordion-btn {
     width: 100%;
     padding: 1rem;
