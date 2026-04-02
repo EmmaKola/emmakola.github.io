@@ -726,4 +726,15 @@ footer p {
     object-fit: cover;
 }
 
+.chart-card-2 {
+    background: #ffffff;
+    padding: 9px;
+    border-radius: 12px;
+    max-width: 450px; /* Controls how slim the card is */
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10); /* Small, soft shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
