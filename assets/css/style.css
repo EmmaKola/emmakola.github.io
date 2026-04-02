@@ -696,9 +696,12 @@ footer p {
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     padding: 35px 40px;   /* Increase these numbers for more breathing room */
-    margin-bottom: 18px;   /* Increase or decrease this value for more/less gap */
 }
-
+.accordion-content p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+    
 .accordion-content.show {
     display: block;
 }
