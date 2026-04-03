@@ -787,7 +787,7 @@ footer p {
     background: #ffffff;
     padding: 9px;
     border-radius: 12px;
-    max-width: 550px; /* Controls how slim the card is */
+    max-width: 620px; /* Controls how slim the card is */
     width: 100%;
     box-shadow: 0 4px 12px rgba(0,0,0,0.10); /* Small, soft shadow */
     display: flex;
