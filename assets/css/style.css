@@ -725,9 +725,11 @@ footer p {
 }
 
 .insight-chart {
-    width: 100%;
+    width: auto;
     border-radius: 8px;
     object-fit: cover;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .chart-card-2 {
@@ -777,5 +779,5 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height:200px;
+    max-height:300px;
 }
