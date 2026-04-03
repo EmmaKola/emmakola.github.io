@@ -781,3 +781,16 @@ footer p {
     align-items: center;
     max-height:300px;
 }
+
+
+ .chart-card-4 {
+    background: #ffffff;
+    padding: 9px;
+    border-radius: 12px;
+    max-width: 6000px; /* Controls how slim the card is */
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10); /* Small, soft shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
