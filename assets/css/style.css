@@ -686,6 +686,18 @@ footer p {
     cursor: pointer;
     margin-top: 1rem;
     font-weight: 600;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.accordion-btn:hover {
+    background: #3D5A80;
+    transform: scale(1.04);  /* Controls how the button zooms out */
+}
+
+.accordion-btn:active {
+    transform: scale(1.02);
 }
 
 .accordion-content {
