@@ -692,7 +692,7 @@ footer p {
 }
 
 .accordion-btn:hover {
-    background: #3D5A80;
+    background: #29B6F6;
     transform: scale(1.04);  /* Controls how the button zooms out */
 }
 
