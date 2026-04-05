@@ -570,6 +570,97 @@ footer p {
     border-color: var(--accent-color);
 }
 
+/* Project page hero — split layout with imagery */
+.project-hero {
+    padding: 4.5rem 1.5rem 5rem;
+    text-align: left;
+}
+
+.project-hero-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 3.5rem);
+    align-items: center;
+}
+
+.project-hero .hero-content {
+    text-align: left;
+}
+
+.project-hero .hero-content h1,
+.project-hero .hero-content p {
+    text-align: left;
+}
+
+.project-hero .hero-buttons {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.75rem;
+}
+
+.project-hero .hero-buttons .hero-btn {
+    margin: 0;
+}
+
+.project-hero-visual {
+    position: relative;
+}
+
+.project-hero-frame {
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+        0 24px 48px rgba(0, 0, 0, 0.22),
+        0 0 0 1px rgba(255, 255, 255, 0.12);
+    aspect-ratio: 4 / 3;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.project-hero-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .project-hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .project-hero .hero-content,
+    .project-hero .hero-content h1,
+    .project-hero .hero-content p {
+        text-align: center;
+    }
+
+    .project-hero .hero-buttons {
+        justify-content: center;
+    }
+
+    .project-hero-visual {
+        order: -1;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-hero {
+        padding: 3.5rem 1.25rem 4rem;
+    }
+
+    .project-hero .hero-content h1 {
+        font-size: 2.25rem;
+    }
+}
 
 
 /* Tabs */
@@ -629,6 +720,33 @@ footer p {
     margin-bottom: 1rem;
 }
 
+.card-section-figure {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.75rem;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.1),
+        0 4px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.35s ease;
+}
+
+.card:hover .card-section-figure {
+    box-shadow:
+        0 20px 48px rgba(0, 0, 0, 0.12),
+        0 6px 16px rgba(0, 0, 0, 0.07);
+}
+
+.card-section-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 .spaced {
     margin-top: 1.5rem; /* increase or decrease as needed */
@@ -675,6 +793,7 @@ footer p {
 .accordion {
     max-width: 900px;   /* Controls how narrow the whole card becomes */
     margin: 0 auto 30px auto; /* Centres it */
+}
 
 .accordion-btn {
     width: 100%;
@@ -722,6 +841,7 @@ footer p {
     display: flex;
     justify-content: center;
     margin: 40px auto;
+    overflow: visible;
 }
 
 .chart-card {
@@ -806,3 +926,47 @@ footer p {
     justify-content: center;
     align-items: center;
  }
+
+/* Insight charts — enlarge on hover */
+.chart-card,
+.chart-card-2,
+.chart-card-3,
+.chart-card-4,
+.chart-card-5,
+.chart-card-6 {
+    position: relative;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform-origin: center center;
+}
+
+.chart-card:hover,
+.chart-card-2:hover,
+.chart-card-3:hover,
+.chart-card-4:hover,
+.chart-card-5:hover,
+.chart-card-6:hover {
+    transform: scale(1.07);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.16);
+    z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chart-card,
+    .chart-card-2,
+    .chart-card-3,
+    .chart-card-4,
+    .chart-card-5,
+    .chart-card-6 {
+        transition: none;
+    }
+
+    .chart-card:hover,
+    .chart-card-2:hover,
+    .chart-card-3:hover,
+    .chart-card-4:hover,
+    .chart-card-5:hover,
+    .chart-card-6:hover {
+        transform: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+}
