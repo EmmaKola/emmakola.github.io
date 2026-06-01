@@ -874,16 +874,18 @@ footer p {
 ------------------------------------------*/
 
 .simple-portfolio {
-    --simple-bg: #f7f4ef;
-    --simple-panel: #ffffff;
-    --simple-ink: #22201d;
-    --simple-muted: #6f6a63;
-    --simple-border: #ded7cc;
-    --simple-accent: #2d6a5f;
-    --simple-accent-dark: #1f5048;
-    --simple-warm: #b87935;
+    --simple-bg: #0f1115;
+    --simple-panel: #171a20;
+    --simple-panel-soft: #1e232b;
+    --simple-ink: #f5f2ea;
+    --simple-muted: #b8b0a3;
+    --simple-border: #323841;
+    --simple-accent: #d6ad55;
+    --simple-accent-dark: #b88b35;
+    --simple-warm: #37b59d;
     font-family: 'Inter', var(--font-body);
-    background: var(--simple-bg);
+    background:
+        linear-gradient(180deg, #0f1115 0%, #15181e 52%, #0f1115 100%);
     color: var(--simple-ink);
     min-height: 100vh;
     line-height: 1.7;
@@ -900,15 +902,20 @@ footer p {
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    padding: 0 0 18px;
+    padding: 16px 18px;
     border-bottom: 1px solid var(--simple-border);
+    border: 1px solid var(--simple-border);
+    border-radius: 18px;
+    background: rgba(23, 26, 32, 0.92);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
 }
 
 .simple-brand {
     color: var(--simple-ink);
-    font-size: 1.05rem;
+    font-size: 1.12rem;
     font-weight: 800;
     letter-spacing: 0;
+    white-space: nowrap;
 }
 
 .simple-portfolio .simple-nav {
@@ -918,19 +925,22 @@ footer p {
     backdrop-filter: none;
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 8px;
     padding: 0;
     z-index: auto;
 }
 
 .simple-portfolio .simple-nav a {
-    color: var(--simple-muted);
+    color: #e7dfd2;
     font-size: 0.95rem;
     font-weight: 700;
+    padding: 8px 11px;
+    border-radius: 999px;
 }
 
 .simple-portfolio .simple-nav a:hover {
-    color: var(--simple-accent);
+    color: #0f1115;
+    background: var(--simple-accent);
     opacity: 1;
 }
 
@@ -956,12 +966,12 @@ footer p {
     text-align: center;
     background: var(--simple-panel);
     border: 1px solid var(--simple-border);
-    border-radius: 6px;
+    border-radius: 24px;
     padding: 34px 28px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 18px 42px rgba(34, 32, 29, 0.07);
+    box-shadow: 0 22px 56px rgba(0, 0, 0, 0.34);
 }
 
 .hub-profile img {
@@ -969,7 +979,7 @@ footer p {
     height: 190px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #efe7dd;
+    border: 6px solid rgba(214, 173, 85, 0.28);
     margin: 0 auto 24px;
 }
 
@@ -990,21 +1000,21 @@ footer p {
 .hub-card {
     background: var(--simple-panel);
     border: 1px solid var(--simple-border);
-    border-radius: 6px;
+    border-radius: 22px;
     padding: 24px;
     min-height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: var(--simple-ink);
-    box-shadow: 0 12px 30px rgba(34, 32, 29, 0.045);
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.24);
 }
 
 .hub-card:hover {
     opacity: 1;
     transform: translateY(-4px);
-    border-color: rgba(45, 106, 95, 0.5);
-    box-shadow: 0 18px 42px rgba(34, 32, 29, 0.08);
+    border-color: rgba(214, 173, 85, 0.68);
+    box-shadow: 0 22px 58px rgba(0, 0, 0, 0.34);
 }
 
 .hub-card h2 {
@@ -1037,9 +1047,9 @@ footer p {
     min-height: 42px;
     padding: 10px 16px;
     background: var(--simple-accent);
-    color: #ffffff !important;
+    color: #111317 !important;
     border: 1px solid var(--simple-accent);
-    border-radius: 5px;
+    border-radius: 999px;
     font-weight: 800;
     line-height: 1.2;
 }
@@ -1052,6 +1062,7 @@ footer p {
 .simple-button:hover {
     background: var(--simple-accent-dark);
     border-color: var(--simple-accent-dark);
+    color: #111317 !important;
     opacity: 1;
 }
 
@@ -1061,7 +1072,7 @@ footer p {
 }
 
 .simple-button.secondary:hover {
-    background: rgba(45, 106, 95, 0.08);
+    background: rgba(214, 173, 85, 0.12);
 }
 
 .simple-main {
@@ -1073,9 +1084,9 @@ footer p {
 .simple-content {
     background: var(--simple-panel);
     border: 1px solid var(--simple-border);
-    border-radius: 6px;
+    border-radius: 24px;
     padding: clamp(28px, 5vw, 54px);
-    box-shadow: 0 18px 42px rgba(34, 32, 29, 0.06);
+    box-shadow: 0 22px 56px rgba(0, 0, 0, 0.3);
 }
 
 .wide-content {
@@ -1131,16 +1142,16 @@ footer p {
     gap: 28px;
     align-items: center;
     border: 1px solid var(--simple-border);
-    border-radius: 6px;
+    border-radius: 22px;
     padding: 18px;
-    background: #fffdf9;
+    background: var(--simple-panel-soft);
 }
 
 .simple-project-card img {
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 18px;
     border: 1px solid var(--simple-border);
 }
 
@@ -1158,7 +1169,7 @@ footer p {
     font-size: 0.82rem;
     font-weight: 700;
     padding: 5px 9px;
-    background: var(--simple-bg);
+    background: rgba(15, 17, 21, 0.55);
 }
 
 .simple-actions {
@@ -1176,9 +1187,9 @@ footer p {
 
 .simple-skill-grid article {
     border: 1px solid var(--simple-border);
-    border-radius: 6px;
+    border-radius: 22px;
     padding: 22px;
-    background: #fffdf9;
+    background: var(--simple-panel-soft);
 }
 
 .contact-details {
@@ -1211,23 +1222,49 @@ footer p {
 .simple-form textarea {
     width: 100%;
     border: 1px solid var(--simple-border);
-    border-radius: 5px;
+    border-radius: 16px;
     padding: 13px 14px;
     font-family: inherit;
     font-size: 1rem;
     color: var(--simple-ink);
-    background: #fffdf9;
+    background: #111419;
 }
 
 .simple-form input:focus,
 .simple-form textarea:focus {
-    outline: 3px solid rgba(45, 106, 95, 0.16);
+    outline: 3px solid rgba(214, 173, 85, 0.18);
     border-color: var(--simple-accent);
 }
 
 .simple-form button {
     margin-top: 10px;
     cursor: pointer;
+}
+
+.form-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.form-social-links a {
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--simple-panel-soft);
+    border: 1px solid var(--simple-border);
+    color: var(--simple-accent);
+    font-size: 1.12rem;
+}
+
+.form-social-links a:hover {
+    background: var(--simple-accent);
+    color: #111317;
+    opacity: 1;
+    transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
