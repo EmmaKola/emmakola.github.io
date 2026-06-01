@@ -1150,7 +1150,7 @@ footer p {
 
 .simple-content h1 {
     color: var(--simple-ink);
-    font-size: clamp(2rem, 4.8vw, 3.35rem);
+    font-size: clamp(1.45rem, 3vw, 2rem);
     line-height: 1;
     margin-bottom: 22px;
     letter-spacing: 0;
@@ -1181,6 +1181,31 @@ footer p {
     border-left: 4px solid var(--simple-warm);
     padding: 16px 0 16px 18px;
     margin: 12px 0;
+}
+
+.education-card-list {
+    display: grid;
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.education-card {
+    border: 1px solid var(--simple-border);
+    border-radius: 22px;
+    padding: 22px;
+    background: var(--simple-panel-soft);
+}
+
+.education-card span {
+    display: inline-block;
+    color: var(--simple-accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.education-card h2 {
+    margin-top: 0;
 }
 
 .experience-timeline {
