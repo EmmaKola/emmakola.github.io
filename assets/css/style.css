@@ -1183,6 +1183,64 @@ footer p {
     margin: 12px 0;
 }
 
+.experience-timeline {
+    position: relative;
+    margin: 26px 0 38px;
+    padding-left: 58px;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: rgba(214, 173, 85, 0.28);
+}
+
+.experience-item {
+    position: relative;
+    padding: 4px 0 4px;
+}
+
+.experience-icon {
+    position: absolute;
+    left: -58px;
+    top: 6px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #141820;
+    color: var(--simple-accent);
+    border: 2px solid rgba(214, 173, 85, 0.36);
+    box-shadow: 0 0 0 6px rgba(214, 173, 85, 0.08);
+}
+
+.experience-copy h3 {
+    color: var(--simple-ink);
+    font-size: 1.42rem;
+    margin-bottom: 2px;
+}
+
+.experience-meta {
+    color: var(--simple-muted);
+    font-weight: 800;
+    margin-bottom: 16px !important;
+}
+
+.experience-copy ul {
+    color: var(--simple-muted);
+    padding-left: 20px;
+}
+
+.experience-copy li {
+    margin-bottom: 8px;
+    line-height: 1.55;
+}
+
 .simple-project-list {
     display: grid;
     gap: 22px;
