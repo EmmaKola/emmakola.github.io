@@ -1058,6 +1058,34 @@ footer p {
     margin: 0 auto;
 }
 
+.home-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.home-social-links a,
+.form-social-links a {
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--simple-panel-soft);
+    border: 1px solid var(--simple-border);
+    color: var(--simple-accent);
+    font-size: 1.12rem;
+}
+
+.home-social-links a:hover,
+.form-social-links a:hover {
+    background: var(--simple-accent);
+    color: #111317;
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
 .hub-button:hover,
 .simple-button:hover {
     background: var(--simple-accent-dark);
@@ -1078,7 +1106,32 @@ footer p {
 .simple-main {
     width: min(960px, calc(100% - 40px));
     margin: 0 auto;
-    padding: 70px 0 90px;
+    padding: 42px 0 90px;
+}
+
+.page-back {
+    width: min(1120px, calc(100% - 40px));
+    margin: 16px auto 0;
+}
+
+.page-back a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--simple-muted);
+    font-weight: 800;
+    font-size: 0.92rem;
+    padding: 8px 12px;
+    border: 1px solid var(--simple-border);
+    border-radius: 999px;
+    background: rgba(23, 26, 32, 0.72);
+}
+
+.page-back a:hover {
+    color: #111317;
+    background: var(--simple-accent);
+    border-color: var(--simple-accent);
+    opacity: 1;
 }
 
 .simple-content {
@@ -1178,6 +1231,10 @@ footer p {
     gap: 10px;
 }
 
+.simple-actions.centered-action {
+    justify-content: center;
+}
+
 .simple-skill-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1246,25 +1303,6 @@ footer p {
     justify-content: center;
     gap: 12px;
     margin-top: 14px;
-}
-
-.form-social-links a {
-    width: 44px;
-    height: 44px;
-    display: inline-grid;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--simple-panel-soft);
-    border: 1px solid var(--simple-border);
-    color: var(--simple-accent);
-    font-size: 1.12rem;
-}
-
-.form-social-links a:hover {
-    background: var(--simple-accent);
-    color: #111317;
-    opacity: 1;
-    transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
