@@ -1150,7 +1150,7 @@ footer p {
 
 .simple-content h1 {
     color: var(--simple-ink);
-    font-size: clamp(2.3rem, 6vw, 4.5rem);
+    font-size: clamp(2rem, 4.8vw, 3.35rem);
     line-height: 1;
     margin-bottom: 22px;
     letter-spacing: 0;
@@ -1201,7 +1201,11 @@ footer p {
 
 .experience-item {
     position: relative;
-    padding: 4px 0 4px;
+    padding: 4px 0 34px;
+}
+
+.experience-item:last-child {
+    padding-bottom: 4px;
 }
 
 .experience-icon {
@@ -1281,6 +1285,22 @@ footer p {
     font-weight: 700;
     padding: 5px 9px;
     background: rgba(15, 17, 21, 0.55);
+}
+
+.simple-tags .tag-action {
+    border: 1px solid var(--simple-accent);
+    border-radius: 999px;
+    color: #111317;
+    font-size: 0.82rem;
+    font-weight: 800;
+    padding: 5px 11px;
+    background: var(--simple-accent);
+}
+
+.simple-tags .tag-action:hover {
+    background: var(--simple-accent-dark);
+    border-color: var(--simple-accent-dark);
+    opacity: 1;
 }
 
 .simple-actions {
