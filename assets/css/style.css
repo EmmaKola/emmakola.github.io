@@ -985,7 +985,7 @@ footer p {
 
 .hub-profile h1 {
     color: var(--simple-ink);
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 3.3vw, 2.45rem);
     line-height: 1.08;
     margin-bottom: 12px;
     letter-spacing: 0;
