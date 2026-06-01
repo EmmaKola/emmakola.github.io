@@ -869,6 +869,430 @@ footer p {
     opacity: 1;
 }
 
+/* -----------------------------------------
+   SIMPLE CARD PORTFOLIO
+------------------------------------------*/
+
+.simple-portfolio {
+    --simple-bg: #f7f4ef;
+    --simple-panel: #ffffff;
+    --simple-ink: #22201d;
+    --simple-muted: #6f6a63;
+    --simple-border: #ded7cc;
+    --simple-accent: #2d6a5f;
+    --simple-accent-dark: #1f5048;
+    --simple-warm: #b87935;
+    font-family: 'Inter', var(--font-body);
+    background: var(--simple-bg);
+    color: var(--simple-ink);
+    min-height: 100vh;
+    line-height: 1.7;
+}
+
+.simple-portfolio a {
+    color: var(--simple-accent);
+}
+
+.simple-header {
+    width: min(1120px, calc(100% - 40px));
+    margin: 24px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0 0 18px;
+    border-bottom: 1px solid var(--simple-border);
+}
+
+.simple-brand {
+    color: var(--simple-ink);
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.simple-portfolio .simple-nav {
+    position: static;
+    background: transparent;
+    border: 0;
+    backdrop-filter: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0;
+    z-index: auto;
+}
+
+.simple-portfolio .simple-nav a {
+    color: var(--simple-muted);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.simple-portfolio .simple-nav a:hover {
+    color: var(--simple-accent);
+    opacity: 1;
+}
+
+.home-hub {
+    width: min(1120px, calc(100% - 40px));
+    min-height: calc(100vh - 84px);
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    padding: 44px 0 60px;
+}
+
+.hub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr 1fr;
+    gap: 22px;
+    align-items: stretch;
+}
+
+.hub-profile {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    text-align: center;
+    background: var(--simple-panel);
+    border: 1px solid var(--simple-border);
+    border-radius: 6px;
+    padding: 34px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 18px 42px rgba(34, 32, 29, 0.07);
+}
+
+.hub-profile img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #efe7dd;
+    margin: 0 auto 24px;
+}
+
+.hub-profile h1 {
+    color: var(--simple-ink);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.08;
+    margin-bottom: 12px;
+    letter-spacing: 0;
+}
+
+.hub-profile p {
+    color: var(--simple-muted);
+    max-width: 320px;
+    margin: 0 auto 24px;
+}
+
+.hub-card {
+    background: var(--simple-panel);
+    border: 1px solid var(--simple-border);
+    border-radius: 6px;
+    padding: 24px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--simple-ink);
+    box-shadow: 0 12px 30px rgba(34, 32, 29, 0.045);
+}
+
+.hub-card:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+    border-color: rgba(45, 106, 95, 0.5);
+    box-shadow: 0 18px 42px rgba(34, 32, 29, 0.08);
+}
+
+.hub-card h2 {
+    font-size: 1.35rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: var(--simple-ink);
+    letter-spacing: 0;
+}
+
+.hub-card p {
+    color: var(--simple-muted);
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 18px;
+}
+
+.hub-card span,
+.simple-link {
+    color: var(--simple-accent);
+    font-weight: 800;
+}
+
+.hub-button,
+.simple-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-height: 42px;
+    padding: 10px 16px;
+    background: var(--simple-accent);
+    color: #ffffff !important;
+    border: 1px solid var(--simple-accent);
+    border-radius: 5px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hub-button {
+    margin: 0 auto;
+}
+
+.hub-button:hover,
+.simple-button:hover {
+    background: var(--simple-accent-dark);
+    border-color: var(--simple-accent-dark);
+    opacity: 1;
+}
+
+.simple-button.secondary {
+    background: transparent;
+    color: var(--simple-accent) !important;
+}
+
+.simple-button.secondary:hover {
+    background: rgba(45, 106, 95, 0.08);
+}
+
+.simple-main {
+    width: min(960px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 70px 0 90px;
+}
+
+.simple-content {
+    background: var(--simple-panel);
+    border: 1px solid var(--simple-border);
+    border-radius: 6px;
+    padding: clamp(28px, 5vw, 54px);
+    box-shadow: 0 18px 42px rgba(34, 32, 29, 0.06);
+}
+
+.wide-content {
+    width: min(1060px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.simple-content h1 {
+    color: var(--simple-ink);
+    font-size: clamp(2.3rem, 6vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 22px;
+    letter-spacing: 0;
+}
+
+.simple-content h2 {
+    color: var(--simple-ink);
+    font-size: 1.35rem;
+    margin: 34px 0 12px;
+    letter-spacing: 0;
+}
+
+.simple-content h3 {
+    color: var(--simple-ink);
+    font-size: 1.08rem;
+    margin-bottom: 6px;
+    letter-spacing: 0;
+}
+
+.simple-content p {
+    color: var(--simple-muted);
+    font-size: 1.04rem;
+    line-height: 1.85;
+    margin-bottom: 16px;
+}
+
+.resume-item {
+    border-left: 4px solid var(--simple-warm);
+    padding: 16px 0 16px 18px;
+    margin: 12px 0;
+}
+
+.simple-project-list {
+    display: grid;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.simple-project-card {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 28px;
+    align-items: center;
+    border: 1px solid var(--simple-border);
+    border-radius: 6px;
+    padding: 18px;
+    background: #fffdf9;
+}
+
+.simple-project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid var(--simple-border);
+}
+
+.simple-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0 20px;
+}
+
+.simple-tags span {
+    border: 1px solid var(--simple-border);
+    border-radius: 999px;
+    color: var(--simple-muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 5px 9px;
+    background: var(--simple-bg);
+}
+
+.simple-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.simple-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.simple-skill-grid article {
+    border: 1px solid var(--simple-border);
+    border-radius: 6px;
+    padding: 22px;
+    background: #fffdf9;
+}
+
+.contact-details {
+    display: grid;
+    gap: 12px;
+    margin: 26px 0 34px;
+}
+
+.contact-details a {
+    color: var(--simple-ink);
+    font-weight: 700;
+}
+
+.contact-details i {
+    color: var(--simple-accent);
+    width: 24px;
+}
+
+.simple-form {
+    display: grid;
+    gap: 12px;
+}
+
+.simple-form label {
+    font-weight: 800;
+    color: var(--simple-ink);
+}
+
+.simple-form input,
+.simple-form textarea {
+    width: 100%;
+    border: 1px solid var(--simple-border);
+    border-radius: 5px;
+    padding: 13px 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--simple-ink);
+    background: #fffdf9;
+}
+
+.simple-form input:focus,
+.simple-form textarea:focus {
+    outline: 3px solid rgba(45, 106, 95, 0.16);
+    border-color: var(--simple-accent);
+}
+
+.simple-form button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .simple-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .simple-portfolio .simple-nav {
+        flex-wrap: wrap;
+        gap: 12px 16px;
+    }
+
+    .hub-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hub-profile {
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+
+    .simple-project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .simple-skill-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .simple-header,
+    .home-hub,
+    .simple-main {
+        width: min(100% - 24px, 1120px);
+    }
+
+    .simple-header {
+        margin-top: 16px;
+    }
+
+    .home-hub {
+        padding-top: 24px;
+    }
+
+    .hub-card {
+        min-height: auto;
+    }
+
+    .hub-profile img {
+        width: 152px;
+        height: 152px;
+    }
+
+    .simple-actions {
+        flex-direction: column;
+    }
+
+    .simple-button {
+        width: 100%;
+    }
+}
+
 @media (max-width: 920px) {
     .home-nav {
         align-items: flex-start;
