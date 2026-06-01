@@ -3,264 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--💡UPDATE: Change the title to your name-->
-    <title>Kolawole Emmanuel| Data Analysis Portfolio</title>
+    <title>Kolawole Emmanuel | Data Analyst Portfolio</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="apple-touch-icon" href="favicon-32x32.png">
-    
-    
-    <!-- Google Fonts for Elegant Typography -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Your Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="home-page">
 
-<!-- HEADER SECTION -->
-<header>
-    <div class="container">
-        <!--💡UPDATE: Change to your name and title-->
-        <h1>Kolawole Emmanuel</h1>
-        <p>Data Analyst | Power BI Developer | Data Story Teller</p>
-        <div class="social-links">
-            <!--💡UPDATE: Add your social media links and CV file-->
-            <a href="https://www.linkedin.com/in/emmanuelokolawole" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/EmmaKola" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="assets/Mycv.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
-        </div>
-    </div>
-</header>
-
-<!-- NAVIGATION -->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<nav class="home-nav" aria-label="Main navigation">
+    <a class="nav-brand" href="#home">Kolawole Emmanuel</a>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="section">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <!--💡UPDATE: Change the image to your own profile photo in assets/images/-->
-            <img src="assets/images/profile-pic.jpg" alt="Kolawole Emmanuel" class="profile-photo">
-            <div class="about-text">
-                <!--💡UPDATE: Write your own 'About Me' text here-->
-                <p> I am Data Analyst and enjoy turning raw, complex, messy datasets into clear stories and actionable insights. My focus are on building dashboards that are interactive, automating repetitive tasks to free up teams and time for more interesting problems, and creating models that help businesses plan for the future.</p>
-                <p> I am profiecient in using SQL, Python, Power BI, Tableau, Excel with a proven ability to develop interactive dashboards, automate reporting workflows, optimize query performance, build data models, data storytelling, business intelligence and enhance data integrity for strategic decision-making.
-                    I am proficient in developing comprehensive reports that reveal hidden patterns and trends in data. This portfolio showcases my projects across various sectors.</p>
-                <!-- EDUCATION SUBSECTION -->
-                
-                <div id="education">
-                    <h3>Education</h3>
+<main id="home">
+    <section class="home-hero">
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">Data Analyst | Power BI Developer | Data Storyteller</p>
+                <h1>Turning business data into clear decisions.</h1>
+                <p class="hero-summary">
+                    I build dashboards, models, and analysis reports that help teams understand performance,
+                    identify opportunities, and act with confidence.
+                </p>
+                <div class="hero-actions">
+                    <a class="primary-action" href="#projects">View Projects</a>
+                    <a class="secondary-action" href="assets/Mycv.pdf" target="_blank">View Resume</a>
+                </div>
+            </div>
 
-                     
-                    <div class="education-item">
-                        <h4>B.Sc Engineering Physics</h4>
-                        <p><strong>University:</strong> Obafemi Awolowo University
-                        <br><strong>Year:</strong> 2010 – 2015</p>
+            <aside class="profile-panel" aria-label="Profile summary">
+                <img src="assets/images/profile-pic.jpg" alt="Kolawole Emmanuel" class="profile-portrait">
+                <h2>Kolawole Emmanuel</h2>
+                <p>Business Intelligence • Data Modelling • Dashboarding</p>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/emmanuelokolawole" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/EmmaKola" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:emmakola20@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </aside>
+        </div>
 
-                        
+        <div class="quick-cards" aria-label="Portfolio highlights">
+            <a class="quick-card" href="#about">
+                <span>01</span>
+                <h3>About</h3>
+                <p>Analytical background with a focus on practical business storytelling.</p>
+            </a>
+            <a class="quick-card" href="#resume">
+                <span>02</span>
+                <h3>Resume</h3>
+                <p>Education, tools, and professional data capabilities in one place.</p>
+            </a>
+            <a class="quick-card" href="#projects">
+                <span>03</span>
+                <h3>Projects</h3>
+                <p>Power BI and Excel analytics projects with reports and repositories.</p>
+            </a>
+            <a class="quick-card" href="#contact">
+                <span>04</span>
+                <h3>Contact</h3>
+                <p>Open to data analyst, BI, and reporting opportunities.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="home-section">
+        <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>A data analyst who connects technical analysis with business questions.</h2>
+        </div>
+        <div class="about-panel">
+            <p>
+                I enjoy turning raw, complex, and messy datasets into clear stories and actionable insights.
+                My work focuses on interactive dashboards, data modelling, reporting automation, and performance
+                analysis that helps stakeholders make better decisions.
+            </p>
+            <p>
+                I work with <strong>SQL</strong>, <strong>Python</strong>, <strong>Power BI</strong>,
+                <strong>Tableau</strong>, and <strong>Excel</strong>, with experience across dashboard design,
+                ETL, data storytelling, business intelligence, and strategic reporting.
+            </p>
+        </div>
+    </section>
+
+    <section id="resume" class="home-section split-section">
+        <div class="section-heading">
+            <p class="eyebrow">Resume</p>
+            <h2>Education and analytical foundation.</h2>
+            <a class="text-link" href="assets/Mycv.pdf" target="_blank">View full resume →</a>
+        </div>
+        <div class="timeline">
+            <article class="timeline-item">
+                <span>2023 - 2024</span>
+                <h3>M.Sc. Renewable Energy</h3>
+                <p>University of Hull, UK. Specialized in Sustainable Energy Systems and Data Analysis.</p>
+            </article>
+            <article class="timeline-item">
+                <span>2016 - 2018</span>
+                <h3>M.Sc. Materials Science</h3>
+                <p>Obafemi Awolowo University.</p>
+            </article>
+            <article class="timeline-item">
+                <span>2010 - 2015</span>
+                <h3>B.Sc. Engineering Physics</h3>
+                <p>Obafemi Awolowo University.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="projects" class="home-section">
+        <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected analytics work.</h2>
+        </div>
+
+        <div class="featured-projects">
+            <article class="featured-project">
+                <img src="assets/images/Nova Med Customer Dashboard.png" alt="Nova Med Solutions dashboard preview">
+                <div class="project-details">
+                    <p class="project-type">Power BI • Sales Performance • Pharmaceutical Analytics</p>
+                    <h3>Nova Med Solutions Performance Analytics</h3>
+                    <p>
+                        An end-to-end sales and customer performance analysis covering revenue, profit,
+                        product demand, customer demographics, reseller dependency, and geographic opportunity.
+                        The report converts dashboard findings into stakeholder-ready recommendations.
+                    </p>
+                    <div class="project-meta">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Power Query</span>
                     </div>
-            
-
-                    
-                    <div class="education-item">
-                        <h4>M.Sc. in Materials Science</h4>
-                        <p><strong>University:</strong> Obafemi Awolowo University
-                        <br><strong>Year:</strong> 2016 – 2018</p>
-
-                        
-                    </div>
-                
-                    <div class="education-item">
-                        <h4>M.Sc. in Renewable Energy</h4>
-                        <p><strong>University:</strong> University of Hull, UK
-                        <br><strong>Year:</strong> 2023 – 2024
-                        <br><strong>Key Achievements:</strong> Specialized in Sustainable Energy Systems and Data Analysis</p>
+                    <div class="project-actions">
+                        <a class="primary-action" href="project.html">View Case Study</a>
+                        <a class="secondary-action" href="https://github.com/EmmaKola/Nova-Med-Solutions" target="_blank">View GitHub</a>
                     </div>
                 </div>
-                <!-- END EDUCATION SUBSECTION -->
+            </article>
 
-                
+            <article class="featured-project">
+                <img src="assets/images/Cafe-Harmony.png" alt="Cafe Harmony analytics dashboard preview">
+                <div class="project-details">
+                    <p class="project-type">Excel • Operations • Customer Experience</p>
+                    <h3>Cafe Harmony Operational Analytics</h3>
+                    <p>
+                        A descriptive analytics project for a growing virtual cafe chain. The analysis examines
+                        sales, customer profiles, menu performance, and operational patterns to support better
+                        stock management, customer experience, and location-level decision-making.
+                    </p>
+                    <div class="project-meta">
+                        <span>Excel</span>
+                        <span>Dashboarding</span>
+                        <span>Business Insight</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="primary-action" href="https://github.com/EmmaKola/Cafe-Harmony-Operational-Analytics" target="_blank">View GitHub</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="skills" class="home-section">
+        <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools I use to move from data to decision.</h2>
+        </div>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>BI and Visualization</h3>
+                <p>Power BI, Tableau, Excel dashboards, KPI reporting, visual storytelling.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Analysis and Data</h3>
+                <p>SQL, Python, Excel, Google Sheets, exploratory analysis, reporting workflows.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-diagram-project"></i>
+                <h3>Modelling and ETL</h3>
+                <p>Power Query, DAX, star schema design, data cleaning, transformation, validation.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-
-            <!--💡UPDATE: Replace this with your own project. Add as many as you like!-->
-            <!-- Project 1 -->
-             <div class="project-card">
-                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
-                <img src="assets/images/Cafe-Harmony.png" alt="Project One">
-                <div class="project-card-content">
-                    <h3>Cafe-Harmony-Operational-Efficiency-Analysis</h3>
-                    <p>The projects performs a descriptive data analysis on Cafe Harmony to help overcome the challenge of improving operational efficiency and customer experience, 
-                        that occurs as a result of scaling and growth in other location from 2024 to 2026.</p>
-                    <div class="project-buttons">
-                        <!--💡UPDATE: Add link to your project's code/documentation on GitHub-->
-                        <a href="https://github.com/EmmaKola/Cafe-Harmony-Operational-Analytics" target="_blank" class="btn">Documentation</a>
-                        <!--💡UPDATE: Add link to your live dashboard (e.g., Power BI, Tableau Public)-->
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Report</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="assets/images/Nova Med Customer Dashboard.png" alt="Project Two">
-                <div class="project-card-content">
-                    <h3>Nova-Med-Solutions-Perfomance-Analysis</h3>
-                    <p>This project gives a comprehensive perfomance of the Medications sold by the company, customer demographics, and trend identification over a 4 years period.</p>
-                    <div class="project-buttons">
-                        <a href="project.html" target="_blank" class="btn">View Project</a>
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNDk0YjdiYzAtOWI5NS00Y2NmLWFlMjQtYmZmNzliZjlhMTAwIiwidCI6ImZmMGYzZTNhLTNlNTMtNDU0Zi1iMmI1LTZjNjg3NTNiOGVlNCJ9" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-3.jpg" alt="Project Three Preview">
-                <div class="project-card-content">
-                    <h3>Project Title Three</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-4.jpg" alt="Project Four Preview">
-                <div class="project-card-content">
-                    <h3>Project Title Four</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
-
+    <section id="contact" class="home-section contact-strip">
+        <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in working together?</h2>
+            <p>I am open to data analyst, BI analyst, dashboarding, and reporting opportunities.</p>
         </div>
-    </div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section id="skills" class="section">
-    <div class="container">
-        <h2>Technical Skillset</h2>
-        <div class="skills-table">
-            
-            <!--💡UPDATE: Customize your skills in each category-->
-            <!-- Column 1: Data Visualization -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-chart-pie"></i>
-                    <h3>Data Visualization</h3>
-                </div>
-                <ul class="skill-list">
-                    <li>Power BI</li>
-                    <li>Tableau</li>
-                    <li>Excel Dashboards</li>
-                </ul>
-            </div>
-
-            <!-- Column 2: Data Analysis -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-search-plus"></i>
-                    <h3>Data Analysis</h3>
-                </div>
-                <ul class="skill-list">
-                    <li>SQL</li>
-                    <li>Excel</li>
-                    <li>Python</li>
-                    <li>Google Sheets</li>
-                </ul>
-            </div>
-
-            <!-- Column 3: Data Modeling & ETL -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Data Modeling & ETL</h3>
-                </div>
-                <ul class="skill-list">
-                    <li>Power Query (M)</li>
-                    <li>DAX</li>
-                    <li>Star Schema Design</li>
-                    <li>ETL Processes</li>
-                </ul>
-            </div>
-
+        <div class="contact-actions">
+            <a class="primary-action" href="mailto:emmakola20@gmail.com">Email Me</a>
+            <a class="secondary-action" href="https://www.linkedin.com/in/emmanuelokolawole" target="_blank">LinkedIn</a>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
-<!-- CONTACT FORM SECTION -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact me here</h2>
-        
-        <!--💡UPDATE: Go to formsubmit.co and replace the email with your own-->
-        <form action="https://formsubmit.co/emmakola20@gmail.com" method="POST" class="contact-form">
-            <p> Interested in collaborating or have questions about my work? I'd love to hear from you!</p>
-
-            <!-- Form Fields -->
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
-            </div>
-            
-            <!-- Submit Button -->
-            <button type="submit" class="btn">Send Message</button>
-
-        </form>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <!--💡UPDATE: Change the year and your name-->
-        <p>&copy; 2026 Kolawole Emmanuel. All rights reserved.</p>
-    </div>
+<footer class="home-footer">
+    <p>&copy; 2026 Kolawole Emmanuel. All rights reserved.</p>
 </footer>
 
 <script src="assets/js/main.js"></script>
