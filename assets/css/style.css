@@ -1201,6 +1201,7 @@ footer p {
 
 .hub-button {
     margin: 0 auto;
+    border-radius: 12px;
 }
 
 .home-social-links {
