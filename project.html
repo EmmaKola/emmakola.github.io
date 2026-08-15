@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NovaMed Solutions Power BI case study by Kolawole Emmanuel, covering revenue, profitability, product performance, customer segments, and geographic opportunity.">
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="apple-touch-icon" href="favicon-32x32.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;700&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -16,26 +17,32 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Nova Med Solutions</title>
+    <title>NovaMed Solutions Analytics Case Study - Kolawole Emmanuel</title>
 </head>
 
-<body>
+<body class="simple-portfolio project-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="simple-header">
+        <div class="nav-shell">
+            <a class="simple-brand" href="index.html" aria-label="Kolawole Emmanuel portfolio home"><img src="assets/images/profile-pic.jpg" alt=""><span><strong>Kolawole Emmanuel</strong><small>Data Analyst</small></span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
+            <nav class="simple-nav" id="primary-navigation" aria-label="Main navigation"><a href="about.html">About</a><a href="resume.html">Resume</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="education.html">Education</a><a href="contact.html">Contact</a></nav>
+            <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><i class="fas fa-sun" aria-hidden="true"></i></button>
+        </div>
+    </header>
 
-    <!-- BACK BUTTON -->
-    <a href="index.html" class="back-btn">
-        <i class="fas fa-arrow-left"></i>
-    </a>
+    <main id="main-content">
 
     <!-- HERO SECTION -->
     <section class="hero project-hero">
         <div class="project-hero-inner">
             <div class="hero-content">
-                <h1>Nova Med Solutions</h1>
-                <p>Advancing Global Health Through Reliable Pharmaceutical Supply</p>
+                <h1>NovaMed Solutions</h1>
+                <p>Pharmaceutical Sales, Profitability and Customer Analytics</p>
 
                 <div class="hero-buttons">
-                    <a href="index.html" class="hero-btn">View My Other Projects</a>
-                    <a href="index.html#contact" class="hero-btn secondary">Contact Me</a>
+                    <a href="projects.html" class="hero-btn">View Portfolio Projects</a>
+                    <a href="contact.html" class="hero-btn secondary">Contact Me</a>
                 </div>
             </div>
             <div class="project-hero-visual">
@@ -47,10 +54,10 @@
     </section>
 
     <!-- TABS -->
-    <div class="tabs">
-        <button class="tab-btn active" onclick="openTab('overview')">Overview</button>
-        <button class="tab-btn" onclick="openTab('insights')">Insights</button>
-        <button class="tab-btn" onclick="openTab('recommendations')">Recommendations</button>
+    <div class="tabs" role="tablist" aria-label="Case study sections">
+        <button class="tab-btn active" type="button" role="tab" aria-selected="true" aria-controls="overview" onclick="openTab('overview', event)">Overview</button>
+        <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="insights" onclick="openTab('insights', event)">Insights</button>
+        <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="recommendations" onclick="openTab('recommendations', event)">Recommendations</button>
     </div>
 
     <!-- OVERVIEW TAB -->
@@ -58,14 +65,8 @@
 
         <div class="card">
             <h2>Project Overview</h2>
-            <p>This project took a deep dive into Nova Med solutions a dynamic and a leading pharmaceutical company that has expanded across Europe and other part of the continents. 
-                NovaMed Solutions aims to optimise sales performance and inventory management across its diverse healthcare network. The company faces challenges in demand forecasting,
-                stock control, and customer engagement, impacting operational efficiency. Over the past year, comprehensive sales data—including revenue, profit margins, 
-                drug performance, and customer demographics—has been collected. This dataset provides a unique opportunity for in-depth analysis and trend identification. 
-                Leveraging data-driven insights, NovaMed seeks to enhance business strategies, identify key market opportunities, and streamline operations. 
-                The project focuses on translating complex sales data into actionable decisions. Ultimately, the goal is to improve efficiency, profitability, and 
-                customer satisfaction across the organisation.</p>
-            <p class="spaced">The goal is to optimise sales performance, undersstand and improve customer engagement, and uncover key business insights using data.</p>
+            <p>NovaMed Solutions is a pharmaceutical distributor operating across Europe and other international markets. This project analyses one year of sales data—including revenue, profit, product performance, and customer demographics—to improve visibility across commercial and operational performance.</p>
+            <p class="spaced">The analysis was designed to identify revenue drivers, assess product and customer performance, highlight market opportunities, and translate the findings into practical recommendations for planning and decision-making.</p>
         </div>
 
         <div class="card">
@@ -73,39 +74,29 @@
             <figure class="card-section-figure">
                 <img src="assets/images/About%20the%20Business.png" alt="NovaMed Solutions — pharmaceutical distribution and healthcare partners">
             </figure>
-            <p>NovaMed Solutions is a leading pharmaceutical distributor with a strong presence across Europe and other regions worldwide. Renowned for its expertise and 
-                commitment to high-quality standards, the company ensures the availability of essential medications to diverse healthcare providers. Their supply chain includes 
-                hospitals, distributors at smaller scale, and direct users.
-                By combining innovation with data-driven decision-making, the company helps customers optimise operations, improve patient access, and make informed 
-                strategic choices. With a focus on excellence and reliability, NovaMed empowers healthcare companies to address critical health challenges and achieve 
-                measurable impact.</p>
-            <p class="spaced">The company continue to supports hospitals, distributors, and direct users with with timely access to high-quality pharmaceutical solutions.</p>
+            <p>NovaMed Solutions supplies pharmaceutical products to hospitals, smaller distributors, resellers, and direct users. Its commercial performance depends on reliable product availability, effective inventory planning, and a clear understanding of customer and market demand.</p>
+            <p class="spaced">A consistent analytics view of sales, cost, profit, product, customer, and geographic performance can help the business prioritise resources and strengthen evidence-led planning.</p>
         </div>
 
        <div class="card">
     <h2>Business Problems</h2>
 
     <p>
-        NovaMed Solutions is currently underutilising its extensive sales and customer data, limiting its ability to gain full visibility into business performance, 
-        and effectively identify key market and customer opportunities across its global operations.
+        NovaMed Solutions was not using its sales and customer data to its full potential. This limited visibility into overall performance and made it more difficult to identify product, customer, and geographic opportunities.
     </p>
 
     <p>
-        The problem has been identified and summarised into bullet points for clarity:
+        The analysis addressed four decision areas:
     </p>
 
     <ul class="business-list">
-        <li><strong>Limited Sales Performance Visibility:</strong> Inadequate tracking of core metrics such as revenue, profit, and cost of goods sold,
-            with limited month‑over‑month performance insights.</li>
+        <li><strong>Sales performance visibility:</strong> Limited tracking of revenue, profit, cost of goods sold, and month-over-month movement.</li>
 
-        <li><strong>Poor Product Performance Identification:</strong> Difficulty in consistently identifying top‑performing and underperforming drugs, 
-            restricting strategic product decisions.</li>
+        <li><strong>Product performance:</strong> Difficulty identifying high- and low-performing products consistently enough to support pricing, promotion, and portfolio decisions.</li>
 
-        <li><strong>Insufficient Customer Insights:</strong> Limited understanding of customer demographics, purchasing behaviour, and buyer segmentation, 
-            reducing the effectiveness of engagement strategies.</li>
+        <li><strong>Customer insight:</strong> Limited understanding of customer demographics, purchasing behaviour, and buyer segments.</li>
 
-        <li><strong>Lack of Geographical and Market Insights:</strong> Minimal visibility into regional sales performance, hindering the identification of 
-            high‑value markets and growth opportunities.</li>
+        <li><strong>Geographic opportunity:</strong> Insufficient visibility into regional sales performance and underdeveloped markets.</li>
     </ul>
 </div>
 
@@ -118,26 +109,25 @@
     </figure>
 
     <p>
-        The project aims to uncover meaningful insights from NovaMed’s sales and customer data, enabling the organisation to improve performance, enhance customer 
-        engagement, and support strategic decision‑making.
+        The project aimed to turn NovaMed's sales and customer data into a reliable performance view for commercial and operational decision-making.
     </p>
 
     <p>
-        The objectives have been clearly outlined below for clarity:
+        The core objectives were to:
     </p>
 
     <ul class="objectives-list">
-        <li><strong>Identify revenue‑driving customer segments:</strong> Determine which customer groups contribute the most to overall sales performance.</li>
+        <li><strong>Identify revenue-driving customer segments:</strong> Determine which groups contribute most to sales performance.</li>
 
-        <li><strong>Analyse profit margins across medications and regions:</strong> Understand how profitability varies across products and geographical markets.</li>
+        <li><strong>Analyse profit margins:</strong> Compare profitability across products and geographic markets.</li>
 
-        <li><strong>Detect historical sales patterns:</strong> Identify trends that can support accurate forecasting and future revenue planning.</li>
+        <li><strong>Evaluate sales patterns:</strong> Identify trends that can inform forecasting and revenue planning.</li>
 
-        <li><strong>Understand key customer demographics:</strong> Gain insight into the characteristics of the most loyal and high‑value customers.</li>
+        <li><strong>Understand customer demographics:</strong> Profile high-value customer groups and buying behaviour.</li>
 
-        <li><strong>Develop an interactive dashboard:</strong> Build a drill‑down Power BI dashboard using slicers to support data‑driven decision‑making.</li>
+        <li><strong>Develop an interactive dashboard:</strong> Build a drill-down Power BI experience with filters and slicers for self-service analysis.</li>
 
-        <li><strong>Prepare a stakeholder‑ready report:</strong> Present findings and actionable recommendations to guide strategic improvements.</li>
+        <li><strong>Prepare a stakeholder-ready report:</strong> Present findings and prioritised recommendations for action.</li>
     </ul>
 </div>
 
@@ -146,28 +136,28 @@
     <h2>Data Analysis Process</h2>
 
     <p>
-        The data analysis process followed a structured and methodical approach to ensure accuracy, reliability, and meaningful insights. The key stages are outlined below:
+        The workflow followed a structured approach to improve data quality, analytical reliability, and reporting clarity:
     </p>
 
     <ol class="process-list">
-        <li><strong>Data Collection:</strong> Sourcing and validating raw data from internal systems to ensure completeness and accuracy.</li>
+        <li><strong>Data collection:</strong> Sourced and validated raw data for completeness and accuracy.</li>
 
-        <li><strong>Data Cleaning:</strong> Removing duplicates, correcting inconsistencies, and handling missing values to prepare the dataset for analysis.</li>
+        <li><strong>Data cleaning:</strong> Removed duplicates, corrected inconsistencies, and handled missing values.</li>
 
-        <li><strong>ETL Process:</strong> Transforming, structuring, and loading the cleaned data into Power BI for modelling and reporting.</li>
+        <li><strong>ETL:</strong> Transformed, structured, and loaded the prepared data into Power BI.</li>
 
-        <li><strong>Data Modelling:</strong> Establishing relationships between tables and building a robust data model to support analysis.</li>
+        <li><strong>Data modelling:</strong> Established table relationships and created a model to support consistent analysis.</li>
 
-        <li><strong>Calculations:</strong> Creating DAX measures, KPIs, and calculated fields to derive meaningful insights.</li>
+        <li><strong>Calculations:</strong> Created DAX measures, KPIs, and calculated fields.</li>
 
-        <li><strong>Dashboard Creation:</strong> Design interactive visuals, slicers, and drill‑down features to support data‑driven decision‑making.</li>
+        <li><strong>Dashboard development:</strong> Designed interactive visuals, slicers, and drill-down features for decision support.</li>
     </ol>
 </div>
 
 
         <div class="card">
             <h2>Executive Summary</h2>
-            <p>This project delivers data-driven insights to improve revenue growth, enhance customer engagement, and improve business operations.</p>
+            <p>The final dashboard brings revenue, profit, product, customer, and geographic measures into one decision-ready view. It highlights product pricing questions, customer concentration, reseller dependency, and markets that warrant further investigation.</p>
         </div>
 
     </section>
@@ -182,7 +172,7 @@
              <!-- Revenue and Profit Trend Button
             -------------------------------------> 
             
-            <button class="accordion-btn">Revenue and Profit Trend</button>
+            <button class="accordion-btn" type="button" aria-expanded="false">Revenue and Profit Trends</button>
             <div class="accordion-content">
                <!-- Chart Image -->  
                 <div class="chart-container">
@@ -194,10 +184,7 @@
         </div>
            <!-- Chart Image end -->  
                 
-                <p>NovaMed Solutions’ performance over the past year reveals a business driven by fluctuating revenue and profit trends, rather than consistent growth. 
-                    Monthly analysis shows clear peaks in January, July, and September, contrasted by a sharp decline in February, indicating seasonal demand patterns 
-                    and potential inefficiencies in planning and forecasting. Profit closely follows revenue with a consistence gap which suggest relatively stable cost 
-                    control, howvever, the absence of sustained upward momentum highlights limited long-term growth stability.</p>
+                <p>Revenue and profit fluctuated across the year rather than following a consistent growth path. January, July, and September recorded clear peaks, while February declined sharply. The repeated peaks may reflect demand cycles, but additional operational and market data would be required to confirm seasonality. Profit moved closely with revenue and maintained a broadly consistent gap, suggesting relatively stable cost behaviour during the period.</p>
         </div>
              <!-- Revenue and Profit Trend Button End 
             -------------------------------------------> 
@@ -205,36 +192,32 @@
             <!-- Performing and Underperforming Product 
             ---------------------------------------------->
             
-            <button class="accordion-btn">Performing and Underperforming Product</button>
+            <button class="accordion-btn" type="button" aria-expanded="false">High- and Low-Performing Products</button>
             <div class="accordion-content">
                <!-- Chart Image Top 5 Drugs -->  
                 <div class="chart-container">
         <div class="chart-card-2">
         <img src="assets/images/Top 5 drugs (2).png" 
-             alt="Revenue and Profit Trend" 
+             alt="Top five NovaMed products by revenue"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image Top 5 drugs end -->  
                 
-                <p>A deeper analysis shows that NovaMed’s financial performance is anchored by the strong contribution of its top‑earning drugs, with Doxycycline, 
-                    Ergocalciferol, and Lisinopril forming a stable revenue core, each of these products generated equally strong revenue, demonstrating consistent market 
-                    demand and a well‑balanced product mix at the top of the portfolio. However, Clonazepam and Ezetimibe follow closely behind, reinforcing the depth of 
-                    commercial strength and highlights ability to sustain meaningful revenue across multiple products (medications).</p>
-                <p>This distribution of revenue suggests a healthy competion among the top 5 products, where no single product dominates excessively, and the top performers
-                    provide a reliable financial backbone.</p>
+                <p>Doxycycline, Ergocalciferol, and Lisinopril form the strongest revenue group, while Clonazepam and Ezetimibe follow closely. The relatively even contribution across these products reduces dependence on a single top-selling medication.</p>
+                <p>Together, the five products provide a broad revenue base at the top of the portfolio.</p>
 
                  <!-- Chart Image Doughnut chat -->  
                 <div class="chart-container">
         <div class="chart-card-2">
         <img src="assets/images/Percentage Contribution.png" 
-             alt="Revenue and Profit Trend" 
+             alt="Percentage revenue contribution of NovaMed's top five products"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image end Doughnut chat--> 
 
-        <p>Percentage contribution of the top 5 products (drugs) to revenue. Indicating well balanced product mix and consistent demand among the top 5 products</p>
+        <p>The percentage contribution view confirms a balanced mix among the top five products, with no single medication dominating revenue.</p>
 
                   <!-- Chart Image Low performing product chat -->  
                 <div class="chart-container">
@@ -246,9 +229,7 @@
         </div>
            <!-- Chart Image end low performing product chat--> 
 
-            <p>Hydrochlorothiazide, Fluticasone, Amoxicillin, Montelukast, and Warfarin represent the lower‑performing end of NovaMed’s portfolio, generating substantially 
-                less revenue compared to the leading products. Their low revenue performance signals areas such as; shifting market dynamics, intensified competition of other 
-                products, or reduced therapeutic demand may be constraining their commercial outcomes.	</p>
+            <p>Hydrochlorothiazide, Fluticasone, Amoxicillin, Montelukast, and Warfarin generated substantially less revenue than the leading products. Pricing, unit volume, procurement cost, competition, and demand should be examined before attributing the gap to a specific cause.</p>
 
                 <p>While the top‑earning medications drive NovaMed’s financial strength, the quantity‑sold analysis reveals a more nuanced picture of market behaviour.</p>
 
@@ -262,11 +243,7 @@
         </div>
            <!-- Chart Image qauntity sold end --> 
 
-        <p> Doxycycline performs best among the top 5 drugs contributing to revenue, but ranked second in units sold and has a sales margin ~ 36% below Lisinopril. 
-            This suggests a price and cost review is needed for Lisinopril to generate optimal revenue. Furthermore, Hydrochlorothiazide, Montelukast, and 
-            Amoxicillin - records higher sales volumes than the top performing drugs except Lisinopril indicating they are more demanded but are priced lower, limiting their 
-            revenue contribution despite strong unit demand. 
-        </p>
+        <p>Doxycycline ranked first for revenue but second for units sold, with unit sales approximately 36% below Lisinopril. Lisinopril therefore warrants a price-and-cost review to understand why stronger volume does not translate into the highest revenue. Hydrochlorothiazide, Montelukast, and Amoxicillin also recorded relatively high unit demand but lower revenue, indicating a need to assess pricing and product economics.</p>
 
         </div>
         <!-- Performing and Underperforming Product Ends
@@ -275,50 +252,43 @@
           <!-- Profit Margin and Sales efficiency
             -----------------------------------------> 
             
-            <button class="accordion-btn">Profit Margin and Sales efficiency</button>
+            <button class="accordion-btn" type="button" aria-expanded="false">Profit Margin and Sales Efficiency</button>
             <div class="accordion-content">
                <!-- Chart Image profit Margin -->  
                 <div class="chart-container">
         <div class="chart-card-6">
         <img src="assets/images/Profit and Margin.png" 
-             alt="Sales efficiency chat" 
+             alt="NovaMed product profit margin and sales efficiency"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image end profit Margin -->  
                 
-                <p>From a profitability standpoint, the analysis reveals a clear stratification across NovaMed’s portfolio. Aspirin and Omeprazole emerge as the most 
-                    efficient performers, achieving profit margins of 0.98, indicating exceptional cost‑to‑revenue conversion and process efficiency. Escitalopram 
-                    follows closely, while  Doxycycline the top selling product show comparatively lower efficiency at 0.95. This may signal potential margin compression 
-                    or higher cost structures.</p>
+                <p>Aspirin and Omeprazole recorded the highest profit-margin ratio at 0.98, followed closely by Escitalopram. Doxycycline, the highest-revenue product, recorded a lower ratio of 0.95. The difference warrants a closer review of pricing, procurement cost, discounts, and product mix.</p>
 
             <!-- Chart Image Doxycycline -->  
                 <div class="chart-container">
         <div class="chart-card-6">
         <img src="assets/images/Doxycycline.png" 
-             alt="Sales efficiency chat" 
+             alt="Doxycycline monthly revenue and profit trends"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image end Doxycycline --> 
 
-                <p>A deeper dive into the Doxycycline reveales that there is a noticeable consistent gap between revenue and profit trend indicating product cost not fully efficient.
-                  However, there are sales spikes in early year, mid-year and end of the year indicating time of high demand and high market sales. The alignment between 
-                the peaks and dips of revenue and profit indicates strong correlation between market demand and profitability. </p>
+                <p>Doxycycline shows a consistent gap between revenue and profit, which supports a review of product-level cost efficiency. Sales peaks appear early, mid-year, and near year-end. Revenue and profit rise and fall together, showing that profitability is closely linked to changes in sales volume or value.</p>
 
                  <!-- Chart Image Aspirin -->  
                 <div class="chart-container">
         <div class="chart-card-6">
         <img src="assets/images/Aspirin.png" 
-             alt="Sales efficiency chat" 
+             alt="Aspirin monthly revenue and profit trends"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image end Aspirin-->  
 
-            <p>Aspirin, by contrast, demonstrates a more stable and tightly aligned trend profile. Revenue and profit lines track each other consistently with minimal divergence, 
-                reflecting predictable demand patterns and a steady profit‑to‑revenue ratio. This indicate optimum performance (stable profit margin, and stable cost) of the product
-                over the years.</p>
+            <p>Aspirin shows a more stable and closely aligned revenue-and-profit pattern. The limited divergence indicates a consistent profit-to-revenue relationship and relatively stable product economics during the reporting period.</p>
                 
         </div>
              <!-- Profit Margin and Sales Efficiency ends
@@ -327,7 +297,7 @@
              <!-- Revenue and Customer Demographics
             -------------------------------------> 
             
-            <button class="accordion-btn">Revenue and Customer Demographics</button>
+            <button class="accordion-btn" type="button" aria-expanded="false">Revenue and Customer Demographics</button>
             <div class="accordion-content">
                <!-- Chart Image Revenue by Gender -->  
                 <div class="chart-container">
@@ -339,86 +309,76 @@
         </div>
            <!-- Chart Image Revenue by Gender end -->  
                 
-                <p>The customer demographics shows male contributed to the Revenue more than other genders over the years, and there is variability with dips and peaks, with peak of $ 3.3M 
-                    in May. This indicate a strong and stable demand segment. Female and Other Category contributions follow a similar trajectory but with slightly lower amplitude, 
-                    suggesting comparable engagement levels with moderate variability.</p>
+                <p>Male customers contributed the most revenue across the reporting period, peaking at $3.3M in May. Female customers and the Other category followed a similar pattern at lower levels, indicating broadly comparable movement with different revenue contributions.</p>
 
                  <!-- Chart Image Revenue by Segment -->  
                 <div class="chart-container">
         <div class="chart-card-2">
         <img src="assets/images/Revenue by Segment 2.png" 
-             alt="Revenue by Gender" 
+             alt="NovaMed revenue contribution by customer segment"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image Revenue by Segment end -->
                 
-            <p>Further Analysis shows that the Preferred Cuatomer Segment (Hospitals and Retailers) contribute 36% of the total revenue with a margin of 2% above the new customer
-                (34%) while the frequent buyer contributes less with 30%. This highlights the effectiveness of acquisition channels, marketing strategy and 
-                first‑time buyer conversion. </p>
+            <p>Preferred Customers—hospitals and retailers—contributed 36% of total revenue, two percentage points above New Customers at 34%. Frequent Buyers contributed the remaining 30%. The relatively balanced split suggests that retention and acquisition both matter to revenue performance.</p>
 
-                <p>However, majority of the buyers across each customer segment was dominated by the male gender with the Other gender category showing srong dip in revenue
-                    across frequent buyers.</p>
+                <p>Male customers contributed the largest share within each segment, while the Other gender category showed a pronounced decline among Frequent Buyers.</p>
 
                  <!-- Chart Image Revenue by Segment by gender -->  
                 <div class="chart-container">
         <div class="chart-card-5">
         <img src="assets/images/Revenue by Segment.png" 
-             alt="Revenue by Gender" 
+             alt="NovaMed revenue by customer segment and gender"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image Revenue by Segment by gender end -->
 
-                <p>The buyer type - revenue analysis indicate that most of the Novameds customers are reseller contributing 88% to the total revenue and with a margin of 76% over the 
-                direct-users category. This indicates that NovaMed's customer-base is strongly dependent on resellers and all efforts should be taken to preserve this category. </p>
+                <p>Resellers generated 88% of total revenue, 76 percentage points more than direct users. This concentration makes reseller retention commercially important while also exposing the business to channel-dependency risk.</p>
                 
              <!-- Chart Image Revenue by Buyer Type -->  
                 <div class="chart-container">
         <div class="chart-card-5">
         <img src="assets/images/Revenue by Buyer Type.png" 
-             alt="Revenue by Gender" 
+             alt="NovaMed revenue by reseller and direct-user buyer type"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image Revenue by Buyer Type end -->
 
-        <p>However, the age demographics shows a a strong competion among all the age distribtuion with minimal margin across all age groups, demonstrating broad market 
-            penetration and diversified demographic reach.</p>
+        <p>Revenue was distributed relatively evenly across age groups, suggesting broad demographic reach rather than dependence on a single age band.</p>
 
          <!-- Chart Image Revenue by Age Demographics -->  
                 <div class="chart-container">
         <div class="chart-card-5">
         <img src="assets/images/Revenue by Age.png" 
-             alt="Revenue by Gender" 
+             alt="NovaMed revenue by customer age group"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image Revenue by Age Demographics end -->
 
-            <p>The geographic demogrpahics shows that more revenue is generated from Canada with ($32M) and lowest revenue generated from United States with 
-                ($6M). Australia with ($15M) also shows strong revenue contribution but its about 50% lesser than the Canada. Other locations contribute lower percentage of 9 to 8%
-            indicating low sales in these regions. This might indicate untapped market opportunities in these regions. </p>
+            <p>Canada generated the highest revenue at $32M, while the United States generated the lowest at $6M. Australia contributed $15M—approximately half of Canada's result. Other markets each contributed about 8%–9%, highlighting regions that require further demand and market-potential analysis.</p>
 
                 <!-- Chart Image Revenue by Country
                 -------------------------->  
                 <div class="chart-container">
         <div class="chart-card-5">
         <img src="assets/images/Revenue by Country (2).png" 
-             alt="Revenue by Gender" 
+             alt="NovaMed revenue by country"
              class="insight-chart">
         </div>
         </div>
            <!-- Chart Image Revenue by Country end -->
 
-            <p>A futher drilled down of the highest performing county by Customer Segment reveals that the Preferred Customers drives revenue. However, there is noticeable 
-                variability in other countries - shown in the live dashboard.</p>
+            <p>A country-by-segment drill-down shows that Preferred Customers drive revenue in the highest-performing market. Contribution varies across other countries, as shown in the dashboard.</p>
 
                   <!-- Chart Image Revenue by Country by Customer Segment -->  
                 <div class="chart-container">
         <div class="chart-card-2">
         <img src="assets/images/Revenue Drilled.png" 
-             alt="Revenue by Gender" 
+             alt="NovaMed country revenue drilled down by customer segment"
              class="insight-chart">
         </div>
         </div>
@@ -436,36 +396,41 @@
         <div class="card">
             <h2>Recommendations</h2>
             <ul class="objectives-list">
-                <li><strong>Hydrochlorothiazide, Montelukast, and Amoxicillin</strong> should undergo annual pricing evaluations to ensure optimal margin performance, particularly given their high-volume but lower-revenue profile.</li>
-                <li><strong>Lisinopril</strong>, as a top-performing product, requires a structured price-review cycle, supported by supplier benchmarking to secure lower procurement costs and protect long-term profitability.</li>
-                <li><strong>Aspirin’s</strong> exceptionally high profit margin positions it as a key efficiency driver. To maximise value, the business should either scale sales volume through targeted demand-generation initiatives or enhance profitability via pricing optimisation and cost-efficiency measures.</li>
-                <li><strong>Male customers</strong> contribute a disproportionately large share of total revenue, indicating a high-value demographic segment. Strengthening engagement through tailored marketing strategies and product positioning will help sustain and expand this revenue stream.</li>
-                <li>Revenue opportunities within the <strong>‘Other’ gender</strong> segment should be explored, as this group may represent an under-penetrated market with growth potential.</li>
-                <li>With over <strong>88% of revenue</strong> generated from reseller channels, Nova Meds should prioritise retention strategies—such as competitive pricing, loyalty incentives, and value-added partnerships—to safeguard market share and reduce competitive risk.</li>
+                <li><strong>Review product economics:</strong> assess pricing, procurement cost, and discounts for Lisinopril, Hydrochlorothiazide, Montelukast, and Amoxicillin, where unit demand is not translating proportionately into revenue.</li>
+                <li><strong>Protect efficient products:</strong> monitor Aspirin's 0.98 profit-margin ratio and test targeted demand initiatives without weakening its cost performance.</li>
+                <li><strong>Develop segment strategies:</strong> retain high-value male customers while testing evidence-led campaigns for lower-contributing segments, including the Other gender category.</li>
+                <li><strong>Manage reseller concentration:</strong> protect the channel generating 88% of revenue through pricing, service, and partnership measures, while evaluating direct-user growth opportunities to reduce dependency risk.</li>
             </ul>
         </div>
     </section>
+    </main>
 
     <!-- JAVASCRIPT -->
     <script>
-        function openTab(tabId) {
+        function openTab(tabId, event) {
             let tabs = document.querySelectorAll('.tab-content');
             let buttons = document.querySelectorAll('.tab-btn');
 
             tabs.forEach(tab => tab.classList.remove('active'));
-            buttons.forEach(btn => btn.classList.remove('active'));
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
 
             document.getElementById(tabId).classList.add('active');
-            event.target.classList.add('active');
+            event.currentTarget.classList.add('active');
+            event.currentTarget.setAttribute('aria-selected', 'true');
         }
 
         document.querySelectorAll(".accordion-btn").forEach(btn => {
             btn.addEventListener("click", () => {
                 btn.classList.toggle("active");
                 btn.nextElementSibling.classList.toggle("show");
+                btn.setAttribute("aria-expanded", String(btn.classList.contains("active")));
             });
         });
     </script>
+    <script src="assets/js/main.js" defer></script>
 
 </body>
 </html>

@@ -3,77 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kolawole Emmanuel's data analytics portfolio, featuring business intelligence, dashboarding, SQL, Power BI, Tableau, Excel, and Python projects.">
     <title>Kolawole Emmanuel - Data Analyst Portfolio</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="apple-touch-icon" href="favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="simple-portfolio">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="simple-header">
-        <a class="simple-brand" href="index.html">Kolawole Emmanuel</a>
-        <nav class="simple-nav" aria-label="Main navigation">
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="nav-shell">
+            <a class="simple-brand" href="index.html" aria-label="Kolawole Emmanuel portfolio home">
+                <img src="assets/images/profile-pic.jpg" alt="">
+                <span><strong>Kolawole Emmanuel</strong><small>Data Analyst</small></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <nav class="simple-nav" id="primary-navigation" aria-label="Main navigation">
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="education.html">Education</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme">
+                <i class="fas fa-sun" aria-hidden="true"></i>
+            </button>
+        </div>
     </header>
 
-    <main class="home-hub">
+    <main class="home-hub" id="main-content">
         <section class="hub-grid" aria-label="Portfolio overview">
             <a class="hub-card" href="about.html">
                 <h2>About Me</h2>
-                <p>My background, analytical approach, and the kind of data work I enjoy doing.</p>
+                <p>How I turn complex data into decision-ready insight for business stakeholders.</p>
                 <span>Read my story →</span>
             </a>
 
             <a class="hub-card" href="resume.html">
                 <h2>My Resume</h2>
-                <p>A focused overview of my professional experience and project work.</p>
+                <p>Experience in BI reporting, dashboard development, SQL analysis, and workflow automation.</p>
                 <span>View resume →</span>
             </a>
 
             <a class="hub-card" href="projects.html">
                 <h2>Projects</h2>
-                <p>Selected analytics work across Power BI, Excel, sales, operations, and reporting.</p>
+                <p>Business-focused case studies across revenue, customer, product, and operational performance.</p>
                 <span>See all projects →</span>
             </a>
 
             <section class="hub-profile" aria-label="Profile">
                 <img src="assets/images/profile-pic.jpg" alt="Kolawole Emmanuel">
                 <h1>Kolawole Emmanuel</h1>
-                <p>Data Analyst || Turning raw data into clear business decisions</p>
+                <p>Data Analyst | Turning raw data into decision-ready business insight</p>
                 <a class="hub-button" href="contact.html">Contact Me</a>
                 <div class="home-social-links" aria-label="Social links">
                     <a href="mailto:emmakola20@gmail.com" aria-label="Email Kolawole Emmanuel"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/EmmaKola" target="_blank" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/emmanuelokolawole" target="_blank" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/EmmaKola" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/emmanuelokolawole" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
                 </div>
             </section>
 
             <a class="hub-card" href="skills.html">
                 <h2>Core Skills</h2>
-                <p>Power BI, SQL, Excel, Python, Tableau, DAX, Power Query, and data storytelling.</p>
+                <p>Power BI, SQL, Excel, Tableau, Python, DAX, Power Query, data modelling, and visual storytelling.</p>
                 <span>See full skillset →</span>
             </a>
 
             <a class="hub-card" href="education.html">
                 <h2>Education</h2>
-                <p>M.Sc. Renewable Energy, M.Sc. Materials Science, and B.Sc. Engineering Physics.</p>
+                <p>A quantitative academic foundation in engineering, research, and evidence-led problem-solving.</p>
                 <span>View details →</span>
             </a>
 
             <a class="hub-card" href="contact.html">
                 <h2>Contact</h2>
-                <p>Open to data analyst, BI analyst, reporting, and dashboarding opportunities.</p>
+                <p>Open to Data Analyst, BI Analyst, Reporting Analyst, and Insight Analyst opportunities.</p>
                 <span>Get in touch →</span>
             </a>
         </section>
     </main>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -883,12 +883,38 @@ footer p {
     --simple-accent: #d6ad55;
     --simple-accent-dark: #b88b35;
     --simple-warm: #37b59d;
+    --simple-header: rgba(15, 17, 21, 0.9);
+    --simple-input: #111419;
+    --simple-chip: rgba(15, 17, 21, 0.55);
+    --simple-shadow: rgba(0, 0, 0, 0.3);
+    --simple-on-accent: #111317;
     font-family: 'Inter', var(--font-body);
     background:
         linear-gradient(180deg, #0f1115 0%, #15181e 52%, #0f1115 100%);
     color: var(--simple-ink);
     min-height: 100vh;
     line-height: 1.7;
+    padding-top: 88px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.simple-portfolio[data-theme="light"] {
+    --simple-bg: #f4f6fa;
+    --simple-panel: #ffffff;
+    --simple-panel-soft: #f7f9fc;
+    --simple-ink: #172033;
+    --simple-muted: #566176;
+    --simple-border: #d7dde8;
+    --simple-accent: #9a6f18;
+    --simple-accent-dark: #76520f;
+    --simple-warm: #147a6c;
+    --simple-header: rgba(250, 251, 253, 0.94);
+    --simple-input: #ffffff;
+    --simple-chip: rgba(23, 32, 51, 0.05);
+    --simple-shadow: rgba(35, 45, 66, 0.13);
+    --simple-on-accent: #ffffff;
+    background: linear-gradient(180deg, #f8f9fc 0%, #eef2f7 55%, #f8f9fc 100%);
+    color-scheme: light;
 }
 
 .simple-portfolio a {
@@ -896,26 +922,75 @@ footer p {
 }
 
 .simple-header {
-    width: min(1120px, calc(100% - 40px));
-    margin: 24px auto 0;
+    width: 100%;
+    min-height: 88px;
+    margin: 0;
+    padding: 17px 0;
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 1000;
+    text-align: left;
+    background: var(--simple-header);
+    border: 0;
+    border-bottom: 1px solid var(--simple-border);
+    border-radius: 0;
+    box-shadow: 0 12px 36px var(--simple-shadow);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.nav-shell {
+    width: min(1200px, calc(100% - 48px));
+    min-height: 54px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    padding: 16px 18px;
-    border-bottom: 1px solid var(--simple-border);
-    border: 1px solid var(--simple-border);
-    border-radius: 18px;
-    background: rgba(23, 26, 32, 0.92);
-    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+    position: relative;
 }
 
 .simple-brand {
     color: var(--simple-ink);
-    font-size: 1.12rem;
-    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     letter-spacing: 0;
     white-space: nowrap;
+}
+
+.simple-brand:hover {
+    color: var(--simple-ink);
+    opacity: 1;
+}
+
+.simple-brand img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(214, 173, 85, 0.72);
+    box-shadow: 0 0 0 4px rgba(214, 173, 85, 0.1);
+}
+
+.simple-brand span {
+    display: grid;
+    line-height: 1.15;
+}
+
+.simple-brand strong {
+    color: var(--simple-ink);
+    font-size: 1.08rem;
+    font-weight: 800;
+}
+
+.simple-brand small {
+    color: var(--simple-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+    text-transform: uppercase;
 }
 
 .simple-portfolio .simple-nav {
@@ -925,23 +1000,93 @@ footer p {
     backdrop-filter: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     padding: 0;
     z-index: auto;
 }
 
 .simple-portfolio .simple-nav a {
-    color: #e7dfd2;
-    font-size: 0.95rem;
-    font-weight: 700;
-    padding: 8px 11px;
-    border-radius: 999px;
+    color: var(--simple-muted);
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 11px 10px;
+    border-radius: 10px;
+    position: relative;
 }
 
-.simple-portfolio .simple-nav a:hover {
-    color: #0f1115;
-    background: var(--simple-accent);
+.simple-portfolio .simple-nav a:hover,
+.simple-portfolio .simple-nav a[aria-current="page"] {
+    color: var(--simple-ink);
+    background: var(--simple-chip);
     opacity: 1;
+}
+
+.simple-portfolio .simple-nav a::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 3px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--simple-accent);
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.simple-portfolio .simple-nav a:hover::after,
+.simple-portfolio .simple-nav a[aria-current="page"]::after {
+    transform: scaleX(1);
+}
+
+.theme-toggle,
+.nav-toggle {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: inline-grid;
+    place-items: center;
+    color: var(--simple-muted);
+    background: transparent;
+    border: 1px solid var(--simple-border);
+    border-radius: 50%;
+    cursor: pointer;
+    font: inherit;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover,
+.nav-toggle:hover {
+    color: var(--simple-ink);
+    border-color: var(--simple-accent);
+    background: var(--simple-chip);
+    transform: translateY(-1px);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.skip-link {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 2000;
+    padding: 10px 14px;
+    color: var(--simple-on-accent) !important;
+    background: var(--simple-accent);
+    border-radius: 8px;
+    font-weight: 800;
+    transform: translateY(-160%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.simple-portfolio :focus-visible {
+    outline: 3px solid var(--simple-accent);
+    outline-offset: 3px;
 }
 
 .home-hub {
@@ -1124,7 +1269,7 @@ footer p {
     padding: 8px 12px;
     border: 1px solid var(--simple-border);
     border-radius: 999px;
-    background: rgba(23, 26, 32, 0.72);
+    background: var(--simple-panel);
 }
 
 .page-back a:hover {
@@ -1309,7 +1454,7 @@ footer p {
     font-size: 0.82rem;
     font-weight: 700;
     padding: 5px 9px;
-    background: rgba(15, 17, 21, 0.55);
+    background: var(--simple-chip);
 }
 
 .simple-tags .tag-action {
@@ -1325,6 +1470,22 @@ footer p {
 .simple-tags .tag-action:hover {
     background: var(--simple-accent-dark);
     border-color: var(--simple-accent-dark);
+    opacity: 1;
+}
+
+.simple-tags .tag-secondary {
+    border: 1px solid var(--simple-accent);
+    border-radius: 999px;
+    color: var(--simple-accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    padding: 5px 11px;
+    background: transparent;
+}
+
+.simple-tags .tag-secondary:hover {
+    color: var(--simple-ink);
+    background: var(--simple-chip);
     opacity: 1;
 }
 
@@ -1387,7 +1548,7 @@ footer p {
     font-family: inherit;
     font-size: 1rem;
     color: var(--simple-ink);
-    background: #111419;
+    background: var(--simple-input);
 }
 
 .simple-form input:focus,
@@ -1408,15 +1569,46 @@ footer p {
     margin-top: 14px;
 }
 
-@media (max-width: 900px) {
-    .simple-header {
-        align-items: flex-start;
-        flex-direction: column;
+@media (max-width: 880px) {
+    .nav-shell {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        gap: 10px;
+    }
+
+    .nav-toggle {
+        display: inline-grid;
     }
 
     .simple-portfolio .simple-nav {
-        flex-wrap: wrap;
-        gap: 12px 16px;
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+        width: min(360px, 100%);
+        display: none;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 2px;
+        padding: 10px;
+        background: var(--simple-panel);
+        border: 1px solid var(--simple-border);
+        border-radius: 18px;
+        box-shadow: 0 18px 48px var(--simple-shadow);
+    }
+
+    .simple-portfolio .simple-nav.is-open {
+        display: flex;
+    }
+
+    .simple-portfolio .simple-nav a {
+        width: 100%;
+        padding: 11px 12px;
+    }
+
+    .simple-portfolio .simple-nav a::after {
+        left: 12px;
+        right: auto;
+        width: 32px;
     }
 
     .hub-grid {
@@ -1439,14 +1631,42 @@ footer p {
 }
 
 @media (max-width: 560px) {
-    .simple-header,
     .home-hub,
     .simple-main {
         width: min(100% - 24px, 1120px);
     }
 
     .simple-header {
-        margin-top: 16px;
+        min-height: 78px;
+        padding: 12px 0;
+    }
+
+    .simple-portfolio {
+        padding-top: 78px;
+    }
+
+    .nav-shell {
+        width: calc(100% - 24px);
+    }
+
+    .simple-brand img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .simple-brand strong {
+        font-size: 0.96rem;
+    }
+
+    .simple-brand small {
+        display: none;
+    }
+
+    .theme-toggle,
+    .nav-toggle {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
     }
 
     .home-hub {
@@ -1637,6 +1857,31 @@ footer p {
    NOVA MED SOLUTIONS PAGE STYLES
 ------------------------------------------*/
 
+.project-page main {
+    color: var(--dark-text-color);
+}
+
+.project-page .hero-btn {
+    color: var(--primary-color);
+}
+
+.project-page .hero-btn.secondary {
+    color: var(--white-color);
+}
+
+.project-page .card,
+.project-page .accordion-content {
+    color: var(--dark-text-color);
+}
+
+.project-page .tabs {
+    color: var(--dark-text-color);
+}
+
+.simple-portfolio.project-page .card:hover {
+    transform: translateY(-2px);
+}
+
 /* Back Button */
 .back-btn {
     position: fixed;
@@ -1798,6 +2043,16 @@ footer p {
 
     .project-hero .hero-content h1 {
         font-size: 2.25rem;
+    }
+
+    .project-page .tabs {
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 0 12px;
+    }
+
+    .project-page .tab-btn {
+        padding: 0.72rem 0.85rem;
     }
 }
 
